@@ -85,53 +85,37 @@
         z-index: -1;
       }
 
-      .gaugeBox {
-        position: absolute;
-        top: 30px;
-        left: 510px;
-        background: white;
-        border-radius: 12px;
-        padding: 14px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        width: 200px;
-        display: inline-block;
-
-        svg {
-          width: 160px;
-          height: 100px;
-          margin-bottom: 10px;
+      .cardCircularProgress {
+        display: inline-flex;
+        position:absolute;
+        left:510px;
+        top:40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 28px 20px 24px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+        font-family: 'Segoe UI', sans-serif;
+        min-width: 200px;
+          .svgWrapperCircularProgress {
+          overflow: hidden;
+          position: relative;
         }
-
-        .gaugeBg {
-          fill: none;
-          stroke: #e5e7eb;
-          stroke-width: 12;
-          stroke-linecap: round;
-        }
-
-        .gaugeFill {
-          fill: none;
-          stroke: #3b82f6;
-          stroke-width: 12;
-          stroke-linecap: round;
-          transition: stroke-dashoffset 1s ease-in-out;
-        }
-
-        .gaugeCenter {
-          fill: #3b82f6;
-        }
-
-        .percentage {
+          .valueTextCircularProgress {
           font-size: 32px;
-          font-weight: bold;
-          color: #1f2937;
-          margin: 10px 0;
+          font-weight: 700;
+          color: #1a1a2e;
+          letter-spacing: -0.5px;
+          line-height: 1;
+          margin-top: 4px;
         }
-
-        .label {
-          font-size: 14px;
-          color: #6b7280;
+        .labelCircularProgress {
+          font-size: 13px;
+          color: #8a95a3;
+          text-align: center;
+          max-width: 160px;
           line-height: 1.4;
         }
       }
@@ -256,8 +240,8 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 45px 1fr;
       grid-template-areas:
-        'title title lk lk'
-        'c1 c2 c3 c4';
+        'title title title title'
+        'cont cont cont cont';
       gap: 20px;
 
       > p {
@@ -267,62 +251,13 @@
         font-weight: 700;
         font-size: 20px;
       }
-
-      a {
-        grid-area: lk;
-        align-self: center;
-        justify-self: end;
-        font-size: 16px;
-        color: #3b82f6;
-      }
-
-      .c1 { grid-area: c1; }
-      .c2 { grid-area: c2; }
-      .c3 { grid-area: c3; }
-      .c4 { grid-area: c4; }
-
-      .c1,
-      .c2,
-      .c3,
-      .c4 {
-        > img {
-          width: 100%;
-          height: 139px;
-        }
-
-        border: 0.5px solid #e2e8f0;
-        border-radius: 16px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-        display: flex;
-        padding: 16px;
-        flex-direction: column;
-        gap: 9px;
-
-        .rtin {
-          display: flex;
-          gap: 10px;
-          align-items: center;
-
-          p { font-weight: 300; }
-        }
-
-        > p:nth-of-type(1) {
-          font-weight: 600;
-          font-size: 18px;
-        }
-
-        > p:nth-of-type(2),
-        > p:nth-of-type(3) {
-          font-weight: 200;
-          font-size: 14px;
-        }
-
-        > p:nth-of-type(4) {
-          font-weight: 600;
-          font-size: 23px;
-        }
+      .topCourCard{
+        grid-area:cont;
+        display:flex;
+        gap:20px;
       }
     }
+      
 
     .topIns {
       display: grid;
@@ -330,33 +265,19 @@
       grid-template-rows: 45px 1fr;
       grid-template-areas:
         'title title title lk lk'
-        'ins1 ins2 ins3 ins4 ins5';
+        'Tcont Tcont Tcont Tcont Tcont';
 
       > p {
         grid-area: title;
         font-size: 24px;
         font-weight: 600;
       }
-
-      a {
-        grid-area: lk;
-        font-size: 14px;
-        font-weight: 500;
-        color: #2563eb;
-        justify-self: end;
+      .topInsCardParent{
+        grid-area:Tcont;
+        display:flex;
+        justify-content: space-between;
       }
-
-      .ins1 { grid-area: ins1; }
-      .ins2 { grid-area: ins2; }
-      .ins3 { grid-area: ins3; }
-      .ins4 { grid-area: ins4; }
-      .ins5 { grid-area: ins5; }
-
-      .ins1,
-      .ins2,
-      .ins3,
-      .ins4,
-      .ins5 {
+      .TopInsCard {
         border: 1px solid #e2e8f0;
         border-radius: 16px;
         padding: 22px 20px 10px 20px;
@@ -375,7 +296,7 @@
         align-items: center;
         justify-items: center;
 
-        img          { grid-area: img; }
+        > img:nth-of-type(1)          { grid-area: img; width:100px; height:100px; }
         p:nth-of-type(1) { grid-area: author; }
         p:nth-of-type(2) { grid-area: c-name; font-size: 15px; font-weight: 300; }
         .sepLineIns  { grid-area: sli; }
@@ -437,9 +358,10 @@
         }
 
         .iconDiv {
-          width: 162px;
+          margin-top: auto;
+          width: 222px;
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 2fr;
           grid-template-rows: 1fr 1fr;
           grid-template-areas:
             'ava name-rev'

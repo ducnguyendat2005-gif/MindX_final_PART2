@@ -1,20 +1,30 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import HomePage from './pages/HomePage/HomePage.jsx'
-import SignIn from './pages/Sign-in/SignIn.jsx'
-import SignUp from './pages/Sign-up/SignUp.jsx'
-
+import "./App.css";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import HomePage from "./pages/HomePage/HomePage.jsx";
+import SignIn from "./pages/Sign-in/SignIn.jsx";
+import SignUp from "./pages/Sign-up/SignUp.jsx";
+import CoursePage from "./pages/CoursePage/CoursePage.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
     <>
-      <HomePage></HomePage>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<HomePage />} /> 
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/course-page" element={<CoursePage />} />
+        <Route path="/course-page/:id" element={<CoursePageDetail />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        
+      </Routes>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

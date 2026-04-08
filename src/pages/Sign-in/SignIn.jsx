@@ -9,7 +9,7 @@ import Header from '../../components/Header/Header.jsx'
 const SignIn = () => {
   return (
     <>
-    <Header></Header>
+   
     <div className={styles.mainPage}>
       {/* Sign-in form */}
       <div className={styles.signInField}>
