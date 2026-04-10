@@ -51,7 +51,7 @@ function Header() {
           <div className={styles.dropdown}>
               <button onClick={() => navigate('/signin')} className={styles.dropdownItem}>Sign In</button>
               <button onClick={() => navigate('/signup')} className={styles.dropdownItem}>Sign Up</button>
-              <button onClick={() => navigate('/course-page')} className={styles.dropdownItem}>Your Courses</button>
+              <button onClick={() => navigate('/course-page')} className={styles.dropdownItem}>All Courses</button>
           </div>
         )}
       </div>

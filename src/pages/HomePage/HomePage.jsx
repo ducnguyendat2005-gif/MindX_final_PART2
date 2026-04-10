@@ -174,7 +174,7 @@ useEffect(() => {
   
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Lỗi: {error}</p>;
-  console.log(TopCat(products)[0])
+  
   
   
   return (
@@ -266,6 +266,7 @@ useEffect(() => {
             {TopCourses(products).map((course) => (
               <CourseCard
                 key={course.id}
+                id={course.id}
                 title={course.title}
                 instructor={course.author}
                 rating={course.rating}

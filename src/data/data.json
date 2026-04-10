@@ -11,7 +11,98 @@
       "level": "Beginner",
       "price": 149.9,
       "category": "development",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.",
+        "courseDescription": "This interactive e-learning course will introduce you to User Experience (UX) design, the art of creating products and services that are intuitive, enjoyable, and user-friendly. Gain a solid foundation in UX principles and learn to apply them in real-world scenarios through engaging modules and interactive exercises.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning. Upon successful completion of our courses, you will earn a prestigious certification that not only validates your expertise but also opens doors to new opportunities in your chosen field.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 49.5,
+        "originalPrice": 149.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Ronald Richards",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Ronald Richards brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences."
+        },
+        "syllabus": [
+          {
+            "title": "Introduction to UX Design",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "What is UX Design?",
+              "History and evolution of UX",
+              "UX vs UI: key differences",
+              "The design thinking process",
+              "Tools overview"
+            ]
+          },
+          {
+            "title": "Basics of User-Centered Design",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Understanding your users",
+              "Creating user personas",
+              "User journey mapping",
+              "Empathy in design",
+              "User research methods"
+            ]
+          },
+          {
+            "title": "Elements of User Experience",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Information architecture",
+              "Interaction design principles",
+              "Visual hierarchy",
+              "Accessibility fundamentals",
+              "Content strategy"
+            ]
+          },
+          {
+            "title": "Visual Design Principles",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Color theory",
+              "Typography fundamentals",
+              "Layout and grid systems",
+              "Iconography and imagery",
+              "Branding and style guides"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially apprehensive, having no prior design experience. But the instructor did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "2",
@@ -24,7 +115,98 @@
       "level": "Beginner",
       "price": 129.9,
       "category": "development",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.",
+        "courseDescription": "This interactive e-learning course will introduce you to User Experience (UX) design, the art of creating products and services that are intuitive, enjoyable, and user-friendly. Gain a solid foundation in UX principles and learn to apply them in real-world scenarios through engaging modules and interactive exercises.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning. Upon successful completion of our courses, you will earn a prestigious certification that not only validates your expertise but also opens doors to new opportunities in your chosen field.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 64.95,
+        "originalPrice": 129.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "John Smilga",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, John Smilga brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences."
+        },
+        "syllabus": [
+          {
+            "title": "JavaScript Fundamentals",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Variables and data types",
+              "Functions and scope",
+              "Control flow & loops",
+              "Arrays and objects",
+              "ES6+ syntax overview"
+            ]
+          },
+          {
+            "title": "DOM Manipulation",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Selecting DOM elements",
+              "Modifying HTML & CSS via JS",
+              "Event listeners",
+              "Form handling",
+              "Dynamic content rendering"
+            ]
+          },
+          {
+            "title": "Asynchronous JavaScript",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Callbacks and the event loop",
+              "Promises",
+              "Async/Await",
+              "Fetch API basics",
+              "Error handling in async code"
+            ]
+          },
+          {
+            "title": "Modern JS Tooling",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "npm and package management",
+              "Webpack & bundlers",
+              "Babel and transpiling",
+              "ESLint and code quality",
+              "Debugging with DevTools"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially apprehensive, having no prior design experience. But the instructor did an amazing job of breaking down complex concepts into easily digestible modules."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "3",
@@ -37,7 +219,74 @@
       "level": "Intermediate",
       "price": 99.9,
       "category": "marketing",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.",
+        "courseDescription": "This interactive e-learning course will introduce you to User Experience (UX) design, the art of creating products and services that are intuitive, enjoyable, and user-friendly. Gain a solid foundation in UX principles and learn to apply them in real-world scenarios through engaging modules and interactive exercises.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning. Upon successful completion of our courses, you will earn a prestigious certification that not only validates your expertise but also opens doors to new opportunities in your chosen field.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 49.95,
+        "originalPrice": 99.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Sophia Lee",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Sophia Lee brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences."
+        },
+        "syllabus": [
+          {
+            "title": "Digital Marketing Overview",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "What is digital marketing?",
+              "Key channels and platforms",
+              "Marketing funnel concepts",
+              "Setting SMART goals",
+              "Overview of analytics tools"
+            ]
+          },
+          {
+            "title": "Email Marketing & Automation",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Building an email list",
+              "Writing effective subject lines",
+              "Segmentation and targeting",
+              "Automating campaigns",
+              "Tracking open & click rates"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "The video lectures were engaging, and the real-world examples really helped solidify my understanding."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "4",
@@ -50,7 +299,98 @@
       "level": "Intermediate",
       "price": 179.9,
       "category": "marketing",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "Master the art of SEO and content strategy with this comprehensive course designed for marketers, bloggers, and business owners who want to drive consistent, organic traffic and build lasting authority in their niche.",
+        "courseDescription": "In this course, you'll learn how to think like a search engine and write like a human — combining technical SEO fundamentals with a compelling content strategy that converts. Starting from keyword research and on-page optimization, you'll progress through link building, technical audits, and content planning that scales. By the end, you'll have the tools and frameworks to craft content that ranks, resonates, and brings measurable results. Whether you're building a blog, growing a brand, or advising clients, this course gives you the strategic foundation to succeed in organic search.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 89.95,
+        "originalPrice": 179.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Neil Patel",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Neil Patel brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "SEO Fundamentals",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "How search engines work",
+              "On-page SEO techniques",
+              "Keyword research basics",
+              "Technical SEO overview",
+              "Link building strategies"
+            ]
+          },
+          {
+            "title": "Content Strategy",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Defining your audience",
+              "Content planning and calendars",
+              "Writing for SEO",
+              "Repurposing content",
+              "Measuring content performance"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Laura Bennett",
+              "rating": 5,
+              "date": "10th January, 2024",
+              "comment": "I started this course with zero marketing experience and finished it feeling genuinely confident. The instructor breaks down complex strategies into simple, actionable steps that you can apply immediately. I especially appreciated the real campaign examples and case studies — they made the theory feel grounded. This is exactly the kind of course I wish I'd found earlier in my career."
+            },
+            {
+              "name": "Carlos Mendez",
+              "rating": 4,
+              "date": "18th February, 2024",
+              "comment": "Very comprehensive and well-organized. Each module builds nicely on the previous one, and the quizzes at the end helped me solidify what I learned. The section on analytics and performance tracking was particularly valuable for me. A few slides felt a bit text-heavy, but the instructor's explanations more than made up for it."
+            },
+            {
+              "name": "Amelia Zhang",
+              "rating": 5,
+              "date": "5th March, 2024",
+              "comment": "This course transformed the way I think about digital marketing. Instead of just giving you a list of tactics, it teaches you to think strategically about your audience, your message, and your goals. I've already started applying several of the frameworks and am seeing real results. The instructor is engaging, knowledgeable, and clearly experienced in the field."
+            },
+            {
+              "name": "Owen Clarke",
+              "rating": 4,
+              "date": "21st March, 2024",
+              "comment": "Excellent pacing and delivery. I appreciated that the course doesn't assume any prior knowledge — it's truly beginner-friendly while still covering meaningful depth. The module on automation tools was a highlight for me. I'd love to see an advanced follow-up course covering paid campaigns in more detail, but as a standalone course this is outstanding value."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "5",
@@ -63,7 +403,98 @@
       "level": "Beginner",
       "price": 79.9,
       "category": "astrology",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "Discover the ancient language of the stars with this beginner-friendly astrology course that teaches you to read birth charts, understand planetary influences, and apply astrological insight to your everyday life.",
+        "courseDescription": "This course is your guided introduction to the world of astrology — from the symbolism behind the zodiac signs and planets to the art of interpreting a full natal chart. You'll learn how the positions of the sun, moon, and rising sign shape personality, and how planetary transits can offer insight into life's major themes and timing. With clear explanations, real chart examples, and practical exercises, you'll go from curious beginner to confident chart reader. No prior knowledge of astrology is required — just an open mind and a curiosity about the cosmos.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 39.95,
+        "originalPrice": 79.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Linda Goodman",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Linda Goodman brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Foundations of Astrology",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "History of astrology",
+              "The zodiac and its signs",
+              "Planets and their meanings",
+              "Houses in a birth chart",
+              "Reading basic chart symbols"
+            ]
+          },
+          {
+            "title": "Sun, Moon & Rising Signs",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Your sun sign explained",
+              "Moon sign and emotions",
+              "The rising sign and appearance",
+              "Combining the Big Three",
+              "Compatibility overview"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "6",
@@ -76,7 +507,122 @@
       "level": "Advanced",
       "price": 119.9,
       "category": "astrology",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "Deepen your astrological practice with advanced techniques in chart interpretation, predictive methods, and relationship astrology — designed for students ready to move beyond the basics.",
+        "courseDescription": "This advanced astrology course builds on a solid foundation of natal chart knowledge and takes your practice to the next level. You'll explore sophisticated predictive tools such as progressions, solar returns, and transits to forecast meaningful life themes and cycles. The course also covers synastry and composite chart analysis for relationship astrology, as well as mundane astrology — the study of collective and world events. Through in-depth case studies and guided practice, you'll develop the confidence to interpret complex chart dynamics and provide meaningful astrological insight.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 59.95,
+        "originalPrice": 119.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Chris Brennan",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Chris Brennan brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Advanced Chart Interpretation",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Aspect patterns (T-square, Grand Trine)",
+              "Intercepted signs and houses",
+              "Retrograde planets",
+              "Chart rulers deep dive",
+              "Timing with transits"
+            ]
+          },
+          {
+            "title": "Predictive Astrology Techniques",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Solar return charts",
+              "Progressions and directions",
+              "Lunar phases and cycles",
+              "Eclipses and their influence",
+              "Annual profections overview"
+            ]
+          },
+          {
+            "title": "Synastry & Relationship Astrology",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Comparing two birth charts",
+              "Key synastry aspects",
+              "Composite charts explained",
+              "Relationship timing with transits",
+              "Compatibility beyond sun signs"
+            ]
+          },
+          {
+            "title": "Mundane & Cultural Astrology",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "National and political charts",
+              "Ingress and lunation charts",
+              "Astrology and world events",
+              "Historical astrological cycles",
+              "Interpreting collective trends"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "7",
@@ -89,7 +635,122 @@
       "level": "Intermediate",
       "price": 159.9,
       "category": "physics",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "Explore the strange and fascinating world of quantum physics — from wave-particle duality and superposition to entanglement and the measurement problem — through clear lectures and interactive visualizations.",
+        "courseDescription": "Quantum physics is one of the most successful — and most counterintuitive — theories in all of science, and this course makes it genuinely accessible. Starting with the historical experiments that forced physicists to abandon classical thinking, you'll build up to the core principles of quantum mechanics: wave functions, operators, the Schrödinger equation, and the probabilistic nature of reality. Through carefully crafted explanations, animated diagrams, and real-world applications, you'll gain a deep conceptual understanding of how nature behaves at its smallest scales. This course is ideal for science enthusiasts, students, and professionals who want a rigorous yet engaging introduction to quantum theory.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 79.95,
+        "originalPrice": 159.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Brian Cox",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Brian Cox brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Quantum Mechanics Basics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Wave-particle duality",
+              "The Heisenberg uncertainty principle",
+              "Schrödinger's equation",
+              "Superposition and entanglement",
+              "Quantum measurement problem"
+            ]
+          },
+          {
+            "title": "Quantum States & Operators",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Bra-ket notation",
+              "Hermitian operators",
+              "Eigenvalues and observables",
+              "Commutators and uncertainty",
+              "Hilbert space introduction"
+            ]
+          },
+          {
+            "title": "Applications of Quantum Mechanics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Quantum tunneling",
+              "The hydrogen atom model",
+              "Spin and angular momentum",
+              "Quantum harmonic oscillator",
+              "Lasers and stimulated emission"
+            ]
+          },
+          {
+            "title": "Modern Quantum Topics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Introduction to quantum computing",
+              "Bell's theorem and non-locality",
+              "Quantum cryptography basics",
+              "Many-worlds interpretation",
+              "Open problems in quantum theory"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Elena Vasquez",
+              "rating": 5,
+              "date": "2nd January, 2024",
+              "comment": "I came into this course with a shaky foundation in physics and left feeling confident about concepts I never thought I'd understand. The instructor has a rare ability to make difficult ideas feel intuitive. The animated diagrams and worked examples throughout were incredibly helpful. I've recommended this course to three of my classmates already."
+            },
+            {
+              "name": "Tom Brennan",
+              "rating": 5,
+              "date": "17th February, 2024",
+              "comment": "Absolutely outstanding. This is the most engaging physics course I've taken — and I've studied the subject formally. The lectures strike the perfect balance between mathematical rigor and conceptual intuition. The instructor doesn't shy away from the hard questions, and that's what sets this apart from most introductory courses."
+            },
+            {
+              "name": "Mei-Ling Park",
+              "rating": 4,
+              "date": "9th March, 2024",
+              "comment": "Clear, well-paced, and genuinely fascinating. I particularly loved the way historical context was woven into each topic — it made the material feel alive rather than like a dry textbook. The problem sets were challenging in the best way. My only wish is that there were more of them!"
+            },
+            {
+              "name": "Ravi Patel",
+              "rating": 5,
+              "date": "25th March, 2024",
+              "comment": "This course is a masterclass in clear scientific communication. Complex ideas are presented step by step, with just the right amount of detail at each stage. I watched several modules multiple times just to appreciate how elegantly everything was explained. A fantastic resource for anyone with a genuine curiosity about how the universe works."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "8",
@@ -102,7 +763,122 @@
       "level": "Advanced",
       "price": 199.9,
       "category": "physics",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "Build a thorough and rigorous understanding of classical mechanics — from Newton's laws to Lagrangian and Hamiltonian formulations — through structured lectures, problem-solving, and real-world examples.",
+        "courseDescription": "Classical mechanics is the bedrock of physics, and mastering it opens the door to deeper study in every area of science and engineering. This course takes you from the familiar language of forces and free body diagrams all the way to the elegance of the Lagrangian and Hamiltonian formulations, giving you multiple powerful lenses through which to analyze physical systems. You'll work through rotational motion, oscillations, wave mechanics, and conservation principles, supported by solved examples and practical problem sets throughout. Whether you're a university student, an engineer, or a lifelong learner, this course provides the analytical depth and conceptual clarity that textbooks often lack.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 99.95,
+        "originalPrice": 199.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Leonard Susskind",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Leonard Susskind brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Newtonian Mechanics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Newton's laws of motion",
+              "Kinematics in 1D and 2D",
+              "Forces and free body diagrams",
+              "Work, energy, and power",
+              "Conservation laws"
+            ]
+          },
+          {
+            "title": "Rotational Mechanics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Torque and angular momentum",
+              "Moment of inertia",
+              "Rotational kinetic energy",
+              "Rolling without slipping",
+              "Gyroscopes and precession"
+            ]
+          },
+          {
+            "title": "Lagrangian & Hamiltonian Mechanics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Generalized coordinates",
+              "The Lagrangian formulation",
+              "Euler-Lagrange equations",
+              "Hamiltonian mechanics intro",
+              "Conservation laws from symmetry"
+            ]
+          },
+          {
+            "title": "Oscillations & Waves",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Simple harmonic motion",
+              "Damped and driven oscillators",
+              "Resonance phenomena",
+              "Coupled oscillators",
+              "Introduction to wave mechanics"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Elena Vasquez",
+              "rating": 5,
+              "date": "2nd January, 2024",
+              "comment": "I came into this course with a shaky foundation in physics and left feeling confident about concepts I never thought I'd understand. The instructor has a rare ability to make difficult ideas feel intuitive. The animated diagrams and worked examples throughout were incredibly helpful. I've recommended this course to three of my classmates already."
+            },
+            {
+              "name": "Tom Brennan",
+              "rating": 5,
+              "date": "17th February, 2024",
+              "comment": "Absolutely outstanding. This is the most engaging physics course I've taken — and I've studied the subject formally. The lectures strike the perfect balance between mathematical rigor and conceptual intuition. The instructor doesn't shy away from the hard questions, and that's what sets this apart from most introductory courses."
+            },
+            {
+              "name": "Mei-Ling Park",
+              "rating": 4,
+              "date": "9th March, 2024",
+              "comment": "Clear, well-paced, and genuinely fascinating. I particularly loved the way historical context was woven into each topic — it made the material feel alive rather than like a dry textbook. The problem sets were challenging in the best way. My only wish is that there were more of them!"
+            },
+            {
+              "name": "Ravi Patel",
+              "rating": 5,
+              "date": "25th March, 2024",
+              "comment": "This course is a masterclass in clear scientific communication. Complex ideas are presented step by step, with just the right amount of detail at each stage. I watched several modules multiple times just to appreciate how elegantly everything was explained. A fantastic resource for anyone with a genuine curiosity about how the universe works."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9",
@@ -115,7 +891,110 @@
       "level": "Intermediate",
       "price": 189.9,
       "category": "development",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "Go from React beginner to confident front-end developer with this comprehensive course covering components, hooks, state management, routing, and real-world project development.",
+        "courseDescription": "React is the most widely used JavaScript library for building modern user interfaces, and this course teaches it the right way — from foundational concepts to professional-grade patterns. You'll start with JSX and component architecture, move through React Hooks and the Context API, and then dive into routing with React Router and global state management with Redux Toolkit. Along the way, you'll build real projects that reinforce every concept you learn. By the end, you'll be comfortable building full-featured, responsive React applications and will have the confidence to contribute to professional codebases.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 94.95,
+        "originalPrice": 189.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Maximilian Schwarzmüller",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Maximilian Schwarzmüller brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "React Fundamentals",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "What is React?",
+              "JSX syntax",
+              "Components and props",
+              "State and lifecycle",
+              "Handling events in React"
+            ]
+          },
+          {
+            "title": "React Hooks",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "useState and useEffect",
+              "useRef and useContext",
+              "Custom hooks",
+              "Rules of hooks",
+              "Optimizing with useMemo and useCallback"
+            ]
+          },
+          {
+            "title": "Routing & State Management",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "React Router setup",
+              "Nested routes",
+              "Introduction to Redux",
+              "Redux Toolkit basics",
+              "Context API vs Redux"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Alex Turner",
+              "rating": 5,
+              "date": "6th January, 2024",
+              "comment": "One of the best coding courses I've taken on any platform. The instructor writes clean, readable code and takes the time to explain the 'why' behind every decision — not just the 'how'. The projects were practical and gave me real portfolio pieces by the end. I feel like I genuinely leveled up as a developer."
+            },
+            {
+              "name": "Naomi Okonkwo",
+              "rating": 4,
+              "date": "20th February, 2024",
+              "comment": "Really enjoyed this course. The content is up to date and the instructor clearly keeps up with the latest developments in the field. I loved that each section ended with a mini-project to apply what you just learned. The explanations are clear and never feel rushed. Highly recommend for anyone serious about their development skills."
+            },
+            {
+              "name": "Lucas Müller",
+              "rating": 5,
+              "date": "11th March, 2024",
+              "comment": "This course is incredibly well-structured. I appreciated that it didn't just teach syntax but also covered best practices, common pitfalls, and how things actually work under the hood. By the end, I felt like I could tackle real projects with confidence rather than just copying examples. Easily one of the top courses in this category."
+            },
+            {
+              "name": "Isabelle Fontaine",
+              "rating": 4,
+              "date": "27th March, 2024",
+              "comment": "Thorough and enjoyable from start to finish. The instructor has a knack for anticipating where students might get confused and addressing those moments proactively. The course materials are polished and the video production quality is excellent. I came in with some basic knowledge and left feeling like I could confidently build things on my own."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "10",
@@ -128,7 +1007,122 @@
       "level": "Beginner",
       "price": 109.9,
       "category": "marketing",
-      "thumbnail": "Rectangle 1080.png"
+      "thumbnail": "Rectangle 1080.png",
+      "details": {
+        "shortDescription": "Learn to build a powerful social media presence from the ground up — covering strategy, content creation, paid advertising, and analytics across today's most important platforms.",
+        "courseDescription": "Social media marketing is one of the most in-demand skills in the modern business world, and this bootcamp teaches you everything you need to become effective at it. You'll start by developing a platform-appropriate strategy and brand voice, then move into content creation — learning to write engaging captions, design eye-catching visuals, and produce short-form video that performs. From there, you'll explore paid social advertising, audience targeting, and campaign optimization, before learning how to measure performance and report results. Whether you want to grow your own brand or manage social for clients and companies, this course gives you a complete, practical toolkit.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 54.95,
+        "originalPrice": 109.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Gary Vaynerchuk",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Gary Vaynerchuk brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Social Media Strategy",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Choosing the right platforms",
+              "Building a brand presence",
+              "Content pillars and themes",
+              "Posting schedules and consistency",
+              "Community engagement tactics"
+            ]
+          },
+          {
+            "title": "Content Creation & Visual Storytelling",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Writing captions that convert",
+              "Designing scroll-stopping visuals",
+              "Short-form video fundamentals",
+              "Reels, TikToks, and Shorts strategy",
+              "User-generated content tactics"
+            ]
+          },
+          {
+            "title": "Paid Social & Growth Hacking",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Introduction to paid social ads",
+              "Audience targeting and lookalikes",
+              "A/B testing creatives",
+              "Budget allocation across platforms",
+              "Analyzing ROAS and key metrics"
+            ]
+          },
+          {
+            "title": "Analytics & Reporting",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Setting up social media dashboards",
+              "Tracking reach, impressions, and engagement",
+              "Understanding platform algorithms",
+              "Monthly reporting best practices",
+              "Iterating based on performance data"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Laura Bennett",
+              "rating": 5,
+              "date": "10th January, 2024",
+              "comment": "I started this course with zero marketing experience and finished it feeling genuinely confident. The instructor breaks down complex strategies into simple, actionable steps that you can apply immediately. I especially appreciated the real campaign examples and case studies — they made the theory feel grounded. This is exactly the kind of course I wish I'd found earlier in my career."
+            },
+            {
+              "name": "Carlos Mendez",
+              "rating": 4,
+              "date": "18th February, 2024",
+              "comment": "Very comprehensive and well-organized. Each module builds nicely on the previous one, and the quizzes at the end helped me solidify what I learned. The section on analytics and performance tracking was particularly valuable for me. A few slides felt a bit text-heavy, but the instructor's explanations more than made up for it."
+            },
+            {
+              "name": "Amelia Zhang",
+              "rating": 5,
+              "date": "5th March, 2024",
+              "comment": "This course transformed the way I think about digital marketing. Instead of just giving you a list of tactics, it teaches you to think strategically about your audience, your message, and your goals. I've already started applying several of the frameworks and am seeing real results. The instructor is engaging, knowledgeable, and clearly experienced in the field."
+            },
+            {
+              "name": "Owen Clarke",
+              "rating": 4,
+              "date": "21st March, 2024",
+              "comment": "Excellent pacing and delivery. I appreciated that the course doesn't assume any prior knowledge — it's truly beginner-friendly while still covering meaningful depth. The module on automation tools was a highlight for me. I'd love to see an advanced follow-up course covering paid campaigns in more detail, but as a standalone course this is outstanding value."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "11",
@@ -141,7 +1135,122 @@
       "level": "Advanced",
       "price": 189.0,
       "category": "engineering",
-      "thumbnail": "aero-dynamics.png"
+      "thumbnail": "aero-dynamics.png",
+      "details": {
+        "shortDescription": "Gain a deep understanding of automotive aerodynamics and downforce — from fluid dynamics fundamentals to advanced racing and road car applications — in this specialized engineering course.",
+        "courseDescription": "Aerodynamics is one of the most critical and technically demanding disciplines in vehicle design, and this course gives you a rigorous, practical foundation in it. Beginning with the core principles of fluid dynamics — drag, lift, and pressure distribution — you'll progress through the design of aerodynamic components such as wings, splitters, and diffusers, and understand how they interact with the vehicle and the road surface. The course covers both motorsport applications, where downforce directly affects lap times and handling, and road car design, where drag reduction and cooling efficiency are paramount. Real examples from Formula 1 and production vehicles are used throughout to bridge theory and practice.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 94.5,
+        "originalPrice": 189.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Courtney Henry",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Courtney Henry brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Aerodynamics Principles",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Basics of fluid dynamics",
+              "Drag and lift forces",
+              "Downforce and vehicle stability",
+              "Aerodynamic components (wings, diffusers)",
+              "CFD simulation overview"
+            ]
+          },
+          {
+            "title": "Aerodynamic Testing Methods",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Wind tunnel testing fundamentals",
+              "Scale model testing",
+              "Pressure taps and instrumentation",
+              "Flow visualization techniques",
+              "Correlation between simulation and testing"
+            ]
+          },
+          {
+            "title": "Racing Car Aerodynamics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Formula car aerodynamic packages",
+              "Ground effect and underbody flow",
+              "Active aerodynamic systems",
+              "Rear wing and DRS systems",
+              "Balance and handling setup"
+            ]
+          },
+          {
+            "title": "Road Car & EV Aerodynamics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Drag reduction for fuel efficiency",
+              "Cooling flow management",
+              "Aeroacoustics and wind noise",
+              "EV-specific aero challenges",
+              "Regulatory constraints in production cars"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "12",
@@ -154,7 +1263,98 @@
       "level": "Beginner",
       "price": 99.9,
       "category": "languages",
-      "thumbnail": "finnish-101.png"
+      "thumbnail": "finnish-101.png",
+      "details": {
+        "shortDescription": "Start your Finnish language journey with this carefully structured A1-level course covering pronunciation, essential grammar, and everyday vocabulary — your gateway to one of the world's most unique languages.",
+        "courseDescription": "Finnish is a beautifully logical yet genuinely challenging language, and this course is designed to give you a solid and enjoyable introduction. Beginning with the Finnish alphabet, vowel harmony, and pronunciation, you'll work through the key grammatical structures that form the backbone of the language — including noun cases, personal pronouns, and verb conjugation. Practical vocabulary and real-life dialogue examples are woven throughout, so you'll be forming useful sentences from the very first module. Whether you're planning a trip to Finland, connecting with Finnish heritage, or simply love the challenge of a new language, this course provides a warm and structured path into Finnish.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 49.95,
+        "originalPrice": 99.9,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Theresa Webb",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Theresa Webb brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Finnish Phonetics & Alphabet",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "The Finnish alphabet",
+              "Vowel harmony",
+              "Consonant gradation intro",
+              "Pronunciation practice",
+              "Common greetings and phrases"
+            ]
+          },
+          {
+            "title": "Basic Grammar Structures",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Noun cases (nominative, genitive)",
+              "Personal pronouns",
+              "Basic verb conjugation",
+              "Negation in Finnish",
+              "Simple sentence construction"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "13",
@@ -167,7 +1367,98 @@
       "level": "Beginner",
       "price": 75.0,
       "category": "hardware",
-      "thumbnail": "pc-build.png"
+      "thumbnail": "pc-build.png",
+      "details": {
+        "shortDescription": "Learn to build a high-performance PC from scratch — choosing the right components, assembling them correctly, and troubleshooting common issues — in this practical, beginner-friendly course.",
+        "courseDescription": "Building your own PC is one of the most rewarding things a tech enthusiast can do, and this course walks you through every step of the process with confidence. Starting with a comprehensive guide to PC components — CPUs, GPUs, RAM, storage, motherboards, and power supplies — you'll learn how each part works and what to look for when choosing them for your specific use case, whether that's gaming, creative work, or general productivity. The course then guides you through the full assembly process, from preparing your workspace to connecting every cable and booting your system for the first time. Troubleshooting guides and performance optimization tips round out the experience.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 37.5,
+        "originalPrice": 75.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Albert Flores",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Albert Flores brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "PC Components Overview",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "CPU selection guide",
+              "Choosing the right GPU",
+              "RAM types and speeds",
+              "Storage: SSD vs HDD",
+              "Power supply sizing"
+            ]
+          },
+          {
+            "title": "Assembly & Troubleshooting",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Workspace preparation",
+              "Installing the motherboard",
+              "Cable management tips",
+              "First boot checklist",
+              "Common issues and fixes"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "14",
@@ -180,7 +1471,98 @@
       "level": "Intermediate",
       "price": 145.5,
       "category": "mathematics",
-      "thumbnail": "stats-eng.png"
+      "thumbnail": "stats-eng.png",
+      "details": {
+        "shortDescription": "Build a strong foundation in probability theory and statistical inference with this rigorous yet accessible course, designed specifically for engineers, data scientists, and technical professionals.",
+        "courseDescription": "A solid understanding of probability and statistics is essential for any technical discipline, and this course delivers exactly that — with clarity, depth, and a focus on real engineering applications. You'll begin with the fundamentals of probability: sample spaces, conditional probability, Bayes' theorem, and the most important discrete and continuous distributions. From there, you'll move into statistical inference — hypothesis testing, confidence intervals, regression analysis, and ANOVA — with a strong emphasis on interpreting results correctly and avoiding common pitfalls. Worked examples, data exercises, and case studies from engineering and applied science are used throughout to keep the content concrete and relevant.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 72.75,
+        "originalPrice": 145.5,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Marvin McKinney",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Marvin McKinney brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Probability Fundamentals",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Sample spaces and events",
+              "Conditional probability",
+              "Bayes' theorem",
+              "Discrete distributions",
+              "Continuous distributions"
+            ]
+          },
+          {
+            "title": "Statistical Inference",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Hypothesis testing",
+              "Confidence intervals",
+              "T-tests and Z-tests",
+              "ANOVA overview",
+              "Regression analysis basics"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "15",
@@ -193,7 +1575,98 @@
       "level": "Beginner",
       "price": 110.0,
       "category": "development",
-      "thumbnail": "css-layouts.png"
+      "thumbnail": "css-layouts.png",
+      "details": {
+        "shortDescription": "Master CSS Grid and Flexbox — the two most powerful layout tools in modern web development — through clear explanations, visual demonstrations, and hands-on projects you can add to your portfolio.",
+        "courseDescription": "Layout is at the heart of every great web design, and CSS Grid and Flexbox are the two tools you need to build any layout you can imagine. This course teaches both from the ground up, with a deep dive into each system before showing you how to combine them for maximum flexibility. You'll learn how to create responsive navigation bars, complex page grids, card layouts, and multi-column designs — all without relying on frameworks or workarounds. Whether you're a beginner who wants to level up their CSS skills or an experienced developer looking to fill in the gaps, this course gives you a complete, practical mastery of modern CSS layout.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 55.0,
+        "originalPrice": 110.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Bessie Cooper",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Bessie Cooper brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Flexbox Deep Dive",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Flex container properties",
+              "Flex item properties",
+              "Alignment and justification",
+              "Responsive navigation with Flexbox",
+              "Common layout patterns"
+            ]
+          },
+          {
+            "title": "CSS Grid Mastery",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Grid template areas",
+              "Auto-fill and auto-fit",
+              "Grid gap and alignment",
+              "Overlapping grid items",
+              "Combining Grid and Flexbox"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Alex Turner",
+              "rating": 5,
+              "date": "6th January, 2024",
+              "comment": "One of the best coding courses I've taken on any platform. The instructor writes clean, readable code and takes the time to explain the 'why' behind every decision — not just the 'how'. The projects were practical and gave me real portfolio pieces by the end. I feel like I genuinely leveled up as a developer."
+            },
+            {
+              "name": "Naomi Okonkwo",
+              "rating": 4,
+              "date": "20th February, 2024",
+              "comment": "Really enjoyed this course. The content is up to date and the instructor clearly keeps up with the latest developments in the field. I loved that each section ended with a mini-project to apply what you just learned. The explanations are clear and never feel rushed. Highly recommend for anyone serious about their development skills."
+            },
+            {
+              "name": "Lucas Müller",
+              "rating": 5,
+              "date": "11th March, 2024",
+              "comment": "This course is incredibly well-structured. I appreciated that it didn't just teach syntax but also covered best practices, common pitfalls, and how things actually work under the hood. By the end, I felt like I could tackle real projects with confidence rather than just copying examples. Easily one of the top courses in this category."
+            },
+            {
+              "name": "Isabelle Fontaine",
+              "rating": 4,
+              "date": "27th March, 2024",
+              "comment": "Thorough and enjoyable from start to finish. The instructor has a knack for anticipating where students might get confused and addressing those moments proactively. The course materials are polished and the video production quality is excellent. I came in with some basic knowledge and left feeling like I could confidently build things on my own."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "16",
@@ -206,7 +1679,122 @@
       "level": "Intermediate",
       "price": 95.0,
       "category": "development",
-      "thumbnail": "react-hooks.png"
+      "thumbnail": "react-hooks.png",
+      "details": {
+        "shortDescription": "Take your React development to the next level by mastering Hooks, the Context API, and advanced patterns for building scalable, high-performance applications.",
+        "courseDescription": "React Hooks transformed the way developers write React applications, and this course gives you a thorough, practical mastery of the entire Hooks API and beyond. Starting with useState and useEffect in depth, you'll explore useReducer, useRef, useContext, and performance hooks like useMemo and useCallback — learning not just how they work, but when and why to use each one. The course also covers the Context API as a clean alternative to prop drilling, custom hook design patterns that make your code reusable and testable, and advanced performance optimization techniques using React DevTools. By the end, you'll write React code that is clean, efficient, and maintainable at scale.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 47.5,
+        "originalPrice": 95.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Arlene McCoy",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Arlene McCoy brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Core React Hooks",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "useState in depth",
+              "useEffect and cleanup",
+              "useReducer for complex state",
+              "useRef for DOM access",
+              "Performance hooks overview"
+            ]
+          },
+          {
+            "title": "Context API & Global State",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Creating and consuming context",
+              "Provider pattern best practices",
+              "Avoiding unnecessary re-renders",
+              "Composing multiple contexts",
+              "Context API vs Redux comparison"
+            ]
+          },
+          {
+            "title": "Custom Hooks & Patterns",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Building reusable custom hooks",
+              "useFetch and data fetching patterns",
+              "useLocalStorage hook",
+              "Hook composition strategies",
+              "Testing custom hooks"
+            ]
+          },
+          {
+            "title": "Performance Optimization",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "useMemo in practice",
+              "useCallback and stable references",
+              "React.memo for component memoization",
+              "Profiling with React DevTools",
+              "Code splitting and lazy loading"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Alex Turner",
+              "rating": 5,
+              "date": "6th January, 2024",
+              "comment": "One of the best coding courses I've taken on any platform. The instructor writes clean, readable code and takes the time to explain the 'why' behind every decision — not just the 'how'. The projects were practical and gave me real portfolio pieces by the end. I feel like I genuinely leveled up as a developer."
+            },
+            {
+              "name": "Naomi Okonkwo",
+              "rating": 4,
+              "date": "20th February, 2024",
+              "comment": "Really enjoyed this course. The content is up to date and the instructor clearly keeps up with the latest developments in the field. I loved that each section ended with a mini-project to apply what you just learned. The explanations are clear and never feel rushed. Highly recommend for anyone serious about their development skills."
+            },
+            {
+              "name": "Lucas Müller",
+              "rating": 5,
+              "date": "11th March, 2024",
+              "comment": "This course is incredibly well-structured. I appreciated that it didn't just teach syntax but also covered best practices, common pitfalls, and how things actually work under the hood. By the end, I felt like I could tackle real projects with confidence rather than just copying examples. Easily one of the top courses in this category."
+            },
+            {
+              "name": "Isabelle Fontaine",
+              "rating": 4,
+              "date": "27th March, 2024",
+              "comment": "Thorough and enjoyable from start to finish. The instructor has a knack for anticipating where students might get confused and addressing those moments proactively. The course materials are polished and the video production quality is excellent. I came in with some basic knowledge and left feeling like I could confidently build things on my own."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "17",
@@ -219,7 +1807,98 @@
       "level": "Beginner",
       "price": 130.0,
       "category": "data-science",
-      "thumbnail": "python-ds.png"
+      "thumbnail": "python-ds.png",
+      "details": {
+        "shortDescription": "Launch your data science career with this comprehensive Python bootcamp covering data manipulation, visualization, machine learning fundamentals, and real-world project work — no prior experience required.",
+        "courseDescription": "Python is the language of data science, and this bootcamp gives you everything you need to go from complete beginner to job-ready data practitioner. You'll start with Python fundamentals before diving into the essential data science libraries: NumPy for numerical computing, Pandas for data manipulation, and Matplotlib and Seaborn for visualization. From there, you'll tackle exploratory data analysis, data cleaning, and feature engineering on real datasets — the unglamorous but essential work that forms the majority of a data scientist's day. The course closes with an introduction to machine learning using scikit-learn, covering regression, classification, and model evaluation. Every section includes guided projects so you finish the course with a portfolio of real work.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 65.0,
+        "originalPrice": 130.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Devon Lane",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Devon Lane brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Python for Data Analysis",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "NumPy arrays and operations",
+              "Pandas DataFrames",
+              "Data cleaning techniques",
+              "Exploratory data analysis",
+              "Merging and reshaping data"
+            ]
+          },
+          {
+            "title": "Data Visualization",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Matplotlib basics",
+              "Seaborn for statistical plots",
+              "Interactive charts with Plotly",
+              "Customizing visuals",
+              "Storytelling with data"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "18",
@@ -232,7 +1911,122 @@
       "level": "Beginner",
       "price": 85.0,
       "category": "design",
-      "thumbnail": "ui-ux-design.png"
+      "thumbnail": "ui-ux-design.png",
+      "details": {
+        "shortDescription": "Learn modern UI/UX design from research to handoff — covering wireframing, prototyping in Figma, usability testing, and design systems — in this practical, beginner-friendly course.",
+        "courseDescription": "Great digital products don't happen by accident — they're the result of thoughtful research, intentional design, and rigorous testing. This course teaches you the complete UI/UX design process from the ground up. Starting with user research and empathy mapping, you'll learn to define problems clearly before jumping to solutions. You'll then move through wireframing, visual design principles, and interactive prototyping using Figma — one of the industry's most-used tools. User testing and iteration are covered in depth, along with how to build and maintain a design system. Whether you're looking to start a career in design or add UX skills to an existing role, this course gives you a solid, industry-aligned foundation.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 42.5,
+        "originalPrice": 85.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Jane Cooper",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Jane Cooper brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "UI Design Fundamentals",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Design systems overview",
+              "Component-based design",
+              "Spacing and layout grids",
+              "Color palette creation",
+              "Responsive design patterns"
+            ]
+          },
+          {
+            "title": "UX Research & Wireframing",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "User interviews and surveys",
+              "Affinity mapping",
+              "Low-fidelity wireframing",
+              "Information architecture",
+              "User flow diagrams"
+            ]
+          },
+          {
+            "title": "Prototyping & User Testing",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Interactive prototyping in Figma",
+              "Usability testing methods",
+              "Gathering and interpreting feedback",
+              "Iterating on design decisions",
+              "Handoff to developers"
+            ]
+          },
+          {
+            "title": "Design Systems & Accessibility",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Building a component library",
+              "Design tokens and theming",
+              "WCAG accessibility guidelines",
+              "Inclusive design principles",
+              "Documenting design decisions"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "19",
@@ -245,7 +2039,98 @@
       "level": "Intermediate",
       "price": 115.0,
       "category": "development",
-      "thumbnail": "nodejs-backend.png"
+      "thumbnail": "nodejs-backend.png",
+      "details": {
+        "shortDescription": "Build robust, scalable backend applications with Node.js and Express — covering the event-driven architecture, REST API design, authentication, and database integration that power modern web services.",
+        "courseDescription": "Node.js has become one of the most popular technologies for building fast, scalable server-side applications, and this course teaches you to use it effectively. Beginning with the Node.js core — the event loop, module system, and asynchronous patterns — you'll move into Express.js to build structured REST APIs with clean routing and middleware. The course covers authentication using JSON Web Tokens, database integration with MongoDB and Mongoose, error handling, and API security best practices. Real-world projects are used throughout to tie concepts together, and by the end you'll have the skills to design and deploy backend services that can power production applications.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 57.5,
+        "originalPrice": 115.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Robert Fox",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Robert Fox brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Node.js Core Concepts",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Event loop and non-blocking I/O",
+              "Modules and require",
+              "File system operations",
+              "HTTP module basics",
+              "npm ecosystem"
+            ]
+          },
+          {
+            "title": "Express.js & REST APIs",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Setting up Express",
+              "Routing and middleware",
+              "Request and response handling",
+              "REST API design principles",
+              "Authentication with JWT"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Alex Turner",
+              "rating": 5,
+              "date": "6th January, 2024",
+              "comment": "One of the best coding courses I've taken on any platform. The instructor writes clean, readable code and takes the time to explain the 'why' behind every decision — not just the 'how'. The projects were practical and gave me real portfolio pieces by the end. I feel like I genuinely leveled up as a developer."
+            },
+            {
+              "name": "Naomi Okonkwo",
+              "rating": 4,
+              "date": "20th February, 2024",
+              "comment": "Really enjoyed this course. The content is up to date and the instructor clearly keeps up with the latest developments in the field. I loved that each section ended with a mini-project to apply what you just learned. The explanations are clear and never feel rushed. Highly recommend for anyone serious about their development skills."
+            },
+            {
+              "name": "Lucas Müller",
+              "rating": 5,
+              "date": "11th March, 2024",
+              "comment": "This course is incredibly well-structured. I appreciated that it didn't just teach syntax but also covered best practices, common pitfalls, and how things actually work under the hood. By the end, I felt like I could tackle real projects with confidence rather than just copying examples. Easily one of the top courses in this category."
+            },
+            {
+              "name": "Isabelle Fontaine",
+              "rating": 4,
+              "date": "27th March, 2024",
+              "comment": "Thorough and enjoyable from start to finish. The instructor has a knack for anticipating where students might get confused and addressing those moments proactively. The course materials are polished and the video production quality is excellent. I came in with some basic knowledge and left feeling like I could confidently build things on my own."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "20",
@@ -258,7 +2143,98 @@
       "level": "Expert",
       "price": 150.0,
       "category": "development",
-      "thumbnail": "nextjs-fullstack.png"
+      "thumbnail": "nextjs-fullstack.png",
+      "details": {
+        "shortDescription": "Become a full-stack developer with Next.js — learning server-side rendering, static generation, API routes, authentication, and deployment — in this advanced, project-driven course.",
+        "courseDescription": "Next.js is the leading framework for production React applications, offering a powerful combination of client-side and server-side rendering, built-in API routes, and seamless deployment. This course covers everything you need to build and ship complete full-stack applications. You'll start with the fundamentals of Next.js — file-based routing, SSR, SSG, and incremental static regeneration — before moving into database integration with Prisma, authentication with NextAuth.js, and deployment on Vercel. The course is project-driven throughout, meaning you'll build real, deployable applications that demonstrate your skills. A solid understanding of React is recommended before starting.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 75.0,
+        "originalPrice": 150.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Cody Fisher",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Cody Fisher brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Next.js Fundamentals",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Pages and file-based routing",
+              "Server-side rendering (SSR)",
+              "Static site generation (SSG)",
+              "API routes",
+              "Image optimization"
+            ]
+          },
+          {
+            "title": "Full-Stack Integration",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Connecting to a database (Prisma)",
+              "Authentication with NextAuth",
+              "Deploying to Vercel",
+              "Environment variables",
+              "Performance optimization"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Alex Turner",
+              "rating": 5,
+              "date": "6th January, 2024",
+              "comment": "One of the best coding courses I've taken on any platform. The instructor writes clean, readable code and takes the time to explain the 'why' behind every decision — not just the 'how'. The projects were practical and gave me real portfolio pieces by the end. I feel like I genuinely leveled up as a developer."
+            },
+            {
+              "name": "Naomi Okonkwo",
+              "rating": 4,
+              "date": "20th February, 2024",
+              "comment": "Really enjoyed this course. The content is up to date and the instructor clearly keeps up with the latest developments in the field. I loved that each section ended with a mini-project to apply what you just learned. The explanations are clear and never feel rushed. Highly recommend for anyone serious about their development skills."
+            },
+            {
+              "name": "Lucas Müller",
+              "rating": 5,
+              "date": "11th March, 2024",
+              "comment": "This course is incredibly well-structured. I appreciated that it didn't just teach syntax but also covered best practices, common pitfalls, and how things actually work under the hood. By the end, I felt like I could tackle real projects with confidence rather than just copying examples. Easily one of the top courses in this category."
+            },
+            {
+              "name": "Isabelle Fontaine",
+              "rating": 4,
+              "date": "27th March, 2024",
+              "comment": "Thorough and enjoyable from start to finish. The instructor has a knack for anticipating where students might get confused and addressing those moments proactively. The course materials are polished and the video production quality is excellent. I came in with some basic knowledge and left feeling like I could confidently build things on my own."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "21",
@@ -271,7 +2247,122 @@
       "level": "Intermediate",
       "price": 70.0,
       "category": "development",
-      "thumbnail": "typescript-master.png"
+      "thumbnail": "typescript-master.png",
+      "details": {
+        "shortDescription": "Level up your JavaScript skills by mastering TypeScript — learning types, interfaces, generics, and advanced patterns that make your code safer, more readable, and ready for production at scale.",
+        "courseDescription": "TypeScript has become the standard for large-scale JavaScript development, and this course gives you a thorough and practical command of the language. Starting with the fundamentals — types, interfaces, and type inference — you'll build up to advanced concepts like generics, conditional types, mapped types, and utility types. The course also covers TypeScript in real-world environments: with React, Node.js, and Express, as well as how to write declaration files and migrate existing JavaScript projects. Testing TypeScript code and following best practices for project structure are also addressed. By the end, you'll write TypeScript with confidence and be able to contribute to production codebases that use it.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 35.0,
+        "originalPrice": 70.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Esther Howard",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Esther Howard brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "TypeScript Basics",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Types and interfaces",
+              "Type inference",
+              "Union and intersection types",
+              "Generics introduction",
+              "TypeScript with React"
+            ]
+          },
+          {
+            "title": "Advanced Types & Patterns",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Conditional types",
+              "Mapped types",
+              "Template literal types",
+              "Utility types (Partial, Required, Pick, Omit)",
+              "Discriminated unions"
+            ]
+          },
+          {
+            "title": "TypeScript in the Ecosystem",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "TypeScript with Node.js",
+              "TypeScript with Express",
+              "TypeScript with React (advanced)",
+              "Declaration files (.d.ts)",
+              "Migrating JS projects to TypeScript"
+            ]
+          },
+          {
+            "title": "Testing & Best Practices",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Unit testing with Jest + TypeScript",
+              "Type-safe API contracts",
+              "Strict mode and compiler options",
+              "Common TypeScript anti-patterns",
+              "Code organization and project structure"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Alex Turner",
+              "rating": 5,
+              "date": "6th January, 2024",
+              "comment": "One of the best coding courses I've taken on any platform. The instructor writes clean, readable code and takes the time to explain the 'why' behind every decision — not just the 'how'. The projects were practical and gave me real portfolio pieces by the end. I feel like I genuinely leveled up as a developer."
+            },
+            {
+              "name": "Naomi Okonkwo",
+              "rating": 4,
+              "date": "20th February, 2024",
+              "comment": "Really enjoyed this course. The content is up to date and the instructor clearly keeps up with the latest developments in the field. I loved that each section ended with a mini-project to apply what you just learned. The explanations are clear and never feel rushed. Highly recommend for anyone serious about their development skills."
+            },
+            {
+              "name": "Lucas Müller",
+              "rating": 5,
+              "date": "11th March, 2024",
+              "comment": "This course is incredibly well-structured. I appreciated that it didn't just teach syntax but also covered best practices, common pitfalls, and how things actually work under the hood. By the end, I felt like I could tackle real projects with confidence rather than just copying examples. Easily one of the top courses in this category."
+            },
+            {
+              "name": "Isabelle Fontaine",
+              "rating": 4,
+              "date": "27th March, 2024",
+              "comment": "Thorough and enjoyable from start to finish. The instructor has a knack for anticipating where students might get confused and addressing those moments proactively. The course materials are polished and the video production quality is excellent. I came in with some basic knowledge and left feeling like I could confidently build things on my own."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "22",
@@ -284,7 +2375,134 @@
       "level": "Beginner",
       "price": 90.0,
       "category": "database",
-      "thumbnail": "postgresql-db.png"
+      "thumbnail": "postgresql-db.png",
+      "details": {
+        "shortDescription": "Master PostgreSQL — the world's most advanced open-source relational database — from foundational SQL and schema design all the way to performance tuning, replication, and production deployment.",
+        "courseDescription": "PostgreSQL is the database of choice for serious applications, combining the reliability and power of a traditional relational database with modern features like JSONB support, full-text search, and advanced indexing. This course takes you from the ground up: writing efficient SQL queries, designing normalized schemas, and understanding the relational model deeply. You'll then advance to PostgreSQL-specific features — stored procedures, triggers, views, and full-text search — before tackling production concerns like performance tuning, partitioning, connection pooling, and replication. Hands-on exercises and real-world scenarios are used throughout, making this a complete reference for both beginners and developers looking to deepen their database expertise.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 45.0,
+        "originalPrice": 90.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Cameron Williamson",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Cameron Williamson brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "SQL & PostgreSQL Fundamentals",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Relational database concepts",
+              "SQL SELECT, INSERT, UPDATE, DELETE",
+              "Joins and subqueries",
+              "Indexes and performance",
+              "Transactions and ACID"
+            ]
+          },
+          {
+            "title": "Advanced PostgreSQL",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Stored procedures and functions",
+              "Triggers and views",
+              "Full-text search",
+              "JSON/JSONB support",
+              "Backup and recovery"
+            ]
+          },
+          {
+            "title": "Database Design & Modeling",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Entity-relationship diagrams",
+              "Normalization (1NF, 2NF, 3NF)",
+              "Primary and foreign keys",
+              "Schema design best practices",
+              "Denormalization trade-offs"
+            ]
+          },
+          {
+            "title": "Performance Tuning & Optimization",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Query planning with EXPLAIN ANALYZE",
+              "Index types and when to use them",
+              "Partitioning large tables",
+              "Connection pooling strategies",
+              "Vacuuming and autovacuum"
+            ]
+          },
+          {
+            "title": "PostgreSQL in Production",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Setting up replication",
+              "Monitoring with pg_stat views",
+              "Security hardening",
+              "Dockerizing PostgreSQL",
+              "Managed PostgreSQL on cloud providers"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     },
     {
       "id": "23",
@@ -297,7 +2515,134 @@
       "level": "Beginner",
       "price": 125.0,
       "category": "cloud",
-      "thumbnail": "aws-cloud.png"
+      "thumbnail": "aws-cloud.png",
+      "details": {
+        "shortDescription": "Prepare for the AWS Certified Cloud Practitioner exam and build a real understanding of Amazon Web Services — covering core services, architecture principles, security, and cloud economics.",
+        "courseDescription": "Amazon Web Services is the world's leading cloud platform, and this course gives you a comprehensive and exam-ready understanding of it. Starting with the fundamentals of cloud computing and AWS's global infrastructure, you'll explore the core services that power modern applications: EC2, S3, RDS, Lambda, CloudFront, and more. The course covers IAM and security best practices, VPC networking, monitoring with CloudWatch, and the principles of the AWS Well-Architected Framework. Pricing models, billing, and cost optimization strategies are also addressed in detail. Whether your goal is to earn the AWS Cloud Practitioner certification or simply to understand how cloud infrastructure works, this course provides a clear and practical path forward.",
+        "certification": "At Byway, we understand the significance of formal recognition for your hard work.",
+        "languages": [
+          "English",
+          "Spanish",
+          "Italian",
+          "German"
+        ],
+        "promotionalPrice": 62.5,
+        "originalPrice": 125.0,
+        "discount": "50% Off",
+        "instructor": {
+          "name": "Guy Hawkins",
+          "title": "Instructor",
+          "totalReviews": 40445,
+          "totalStudents": 500,
+          "totalCourses": 15,
+          "bio": "With over a decade of industry experience, Guy Hawkins brings a wealth of practical knowledge to the classroom."
+        },
+        "syllabus": [
+          {
+            "title": "Cloud & AWS Overview",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "What is cloud computing?",
+              "AWS global infrastructure",
+              "Core AWS services overview",
+              "IAM and security basics",
+              "Pricing and billing"
+            ]
+          },
+          {
+            "title": "Key AWS Services",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "EC2 and compute options",
+              "S3 and object storage",
+              "RDS and managed databases",
+              "Lambda and serverless",
+              "CloudFront and CDN"
+            ]
+          },
+          {
+            "title": "Networking & Security in AWS",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "VPC and subnets",
+              "Security groups vs NACLs",
+              "Route tables and internet gateways",
+              "AWS Shield and WAF basics",
+              "CloudTrail and compliance logging"
+            ]
+          },
+          {
+            "title": "Monitoring, Scaling & High Availability",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "CloudWatch metrics and alarms",
+              "Auto Scaling groups",
+              "Elastic Load Balancing",
+              "Multi-AZ and multi-region concepts",
+              "Disaster recovery strategies"
+            ]
+          },
+          {
+            "title": "Cloud Architecture & Best Practices",
+            "lessons": 5,
+            "duration": "1 hour",
+            "items": [
+              "Well-Architected Framework pillars",
+              "Serverless architecture patterns",
+              "Microservices on AWS",
+              "Cost optimization strategies",
+              "Preparing for the AWS CCP exam"
+            ]
+          }
+        ],
+        "learnerReviews": {
+          "averageRating": 4.6,
+          "totalReviews": 146951,
+          "ratingBreakdown": {
+            "5_star": "80%",
+            "4_star": "10%",
+            "3_star": "5%",
+            "2_star": "3%",
+            "1_star": "2%"
+          },
+          "reviews": [
+            {
+              "name": "Mark Doe",
+              "rating": 5,
+              "date": "22nd March, 2024",
+              "comment": "I was initially unsure if this course was right for me, but within the first few lessons I was hooked. The instructor makes complex topics feel manageable and even enjoyable. The real-world examples were particularly helpful in showing how everything fits together in practice. I finished the course feeling genuinely prepared to apply what I learned."
+            },
+            {
+              "name": "Sarah Mitchell",
+              "rating": 5,
+              "date": "14th January, 2024",
+              "comment": "This course completely exceeded my expectations. The instructor explains each concept with such clarity and patience that even the more challenging topics felt approachable. I especially loved the hands-on exercises — they made a huge difference in how quickly I retained the material. I've taken a lot of online courses before, but this one stands out for its structure and depth."
+            },
+            {
+              "name": "James Nguyen",
+              "rating": 4,
+              "date": "3rd February, 2024",
+              "comment": "Really solid course overall. The content is well-paced and the examples are relevant to real-world scenarios. I appreciated how the instructor took time to revisit concepts before moving on. My only minor critique is that a few of the later modules could use more practice exercises, but that doesn't take away from how much I learned. Would definitely recommend to anyone getting started."
+            },
+            {
+              "name": "Priya Sharma",
+              "rating": 5,
+              "date": "29th February, 2024",
+              "comment": "I've been trying to learn this subject for months through various free resources, but nothing clicked until I took this course. The way the curriculum is structured — from foundational principles all the way to practical application — made everything fall into place. The video quality is excellent and the instructor is clearly very passionate about teaching. Worth every penny."
+            },
+            {
+              "name": "Daniel Kowalski",
+              "rating": 4,
+              "date": "8th March, 2024",
+              "comment": "Great experience from start to finish. I liked that the course doesn't rush through topics just to cover more ground. Instead, it takes the time to ensure you truly understand each section before progressing. The community forum was also a nice bonus — I got quick responses whenever I was stuck. Solid investment for anyone serious about building real skills."
+            }
+          ]
+        }
+      }
     }
   ],
   "mainComment": [

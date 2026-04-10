@@ -298,6 +298,7 @@ export default function CoursesPage() {
                 {paginated.map((course) => (
                   <CourseCard
                     key={course.id}
+                    id={course.id}
                     title={course.title}
                     instructor={course.author}
                     rating={course.rating}
@@ -354,6 +355,7 @@ export default function CoursesPage() {
           {TopCourses(coursesData).map((course) => (
               <CourseCard
                 key={course.id}
+                id={course.id}
                 title={course.title}
                 instructor={course.author}
                 rating={course.rating}
