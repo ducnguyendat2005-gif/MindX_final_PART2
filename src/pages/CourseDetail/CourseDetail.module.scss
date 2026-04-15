@@ -16,14 +16,6 @@
   z-index: -10;
 }
 
-.background2 {
-  position: absolute;
-  width: 100%;
-  height: 610px;
-  background-color: #f8fafc;
-  z-index: -10;
-  top: 2338px;
-}
 
 // ─── Main Page Wrapper ───────────────────────────────────────────
 .mainPage {
@@ -31,21 +23,18 @@
 }
 
 // ─── Course Grid ─────────────────────────────────────────────────
+// 40px 347px 50px 30px 1fr 30px 0.85fr 50px 1.4fr 300px
 .course {
   display: grid;
   padding: 77px;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 40px 347px 50px 30px 245px 30px 0.85fr 50px 1fr;
+  grid-template-rows: 40px 347px 50px 30px 1fr;
   grid-template-areas:
     "LK   TnB"
     "MT   TnB"
     "CN   TnB"
     "SL1  TnB"
-    "CDES TnB"
-    "SL2  TnB"
-    "INDET TnB"
-    "SL3  TnB"
-    "SYDET TnB";
+    "content TnB";
 }
 
 // ─── Breadcrumb Link ─────────────────────────────────────────────
@@ -61,9 +50,14 @@
     margin-top: 3.5px;
   }
 
-  > p {
+  > a {
     font-weight: 400;
     font-size: 14px;
+    &:hover{
+      text-decoration: underline; /* Hiện gạch chân khi di chuột */
+      color: orange;
+      cursor:pointer;
+    }
   }
 }
 
@@ -89,7 +83,6 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  
 
   > div {
     background-color: black;
@@ -114,7 +107,7 @@
   background-color: white;
   width: 400px;
   height: 541px;
-  border: 1px solid black;
+  border: 1px solid #E2E8F0;
   border-radius: 16px;
   justify-self: end;
 }
@@ -163,6 +156,25 @@
     transform: scale(0.97);
   }
 }
+.addToCartAdded {
+    background: linear-gradient(180deg, #166534, #14532d) !important;
+    pointer-events: none;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .checkIcon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+    animation: popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  @keyframes popIn {
+    from { transform: scale(0); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+  }
 
 .buyNowButton {
   width: 356px;
@@ -174,7 +186,9 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 
   &:hover {
     box-shadow: 0 6px 20px rgba(2, 6, 23, 0.2);
@@ -189,7 +203,7 @@
 .tnbSl {
   width: 100%;
   height: 0.5px;
-  background-color: black;
+  background-color: #E2E8F0;
   margin-top: 20px;
 }
 
@@ -232,60 +246,43 @@
 }
 
 // shared-button variants (kept for completeness — no extra styles needed currently)
-.sharedButton1,
-.sharedButton2,
-.sharedButton3,
-.sharedButton4,
-.sharedButton5 {
-  // individual overrides go here if needed
-}
 
 // ─── Course Navbar ───────────────────────────────────────────────
 .courseNavbar {
   grid-area: CN;
   display: flex;
-  gap: 24px;
+  gap: 12px;
 }
 
-// Target all navBarButton* divs via attribute selector in SCSS
-.navBarButton1,
-.navBarButton2,
-.navBarButton3,
-.navBarButton4 {
-  
-  .navBtn {
-    width: 200px;
-    height: 48px;
-    border-radius: 12px;
-    border: 1px solid #e5ebf3;
-    background: #ffffff;
-    color: #1f2937;
-    font-size: 15px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    margin-bottom: 10px;
+.navBtn {
+  width:100%;
+  padding: 10px 28px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #e5ebf3;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
 
-    &:hover {
-      background: #f7faff;
-    }
-  }
-
-  input:checked + .navBtn {
-    background: #eef4ff;
-    color: #1d4ed8;
-    border-color: #eef4ff;
+  &:hover {
+    background: #f0f5ff;
+    border-color: #c7d9ff;
   }
 }
 
-
+.navBtnActive {
+  background: #eef4ff;
+  color: #1d4ed8;
+  border-color: #1d4ed8;
+  font-weight: 600;
+}
 
 // ─── Separator Lines ─────────────────────────────────────────────
 %sepLine {
-  background-color: black;
+  background-color: #E2E8F0;
   width: 100%;
   height: 0.5px;
   justify-self: center;
@@ -295,6 +292,7 @@
 .sepLine1 {
   @extend %sepLine;
   grid-area: SL1;
+  
 }
 
 .sepLine2 {
@@ -307,392 +305,436 @@
   grid-area: SL3;
 }
 
-// ─── Course Description ──────────────────────────────────────────
-.courseDes {
-  grid-area: CDES;
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  gap: 10px;
-
-  > p:nth-of-type(1),
-  > p:nth-of-type(3) {
-    font-weight: 600;
-    font-size: 20px;
-  }
-
-  > p:nth-of-type(2),
-  > p:nth-of-type(4) {
-    font-weight: 300;
-    font-size: 16px;
-  }
-
-  > p:nth-of-type(3) {
-    padding-top: 20px;
-  }
-
-  > p:nth-of-type(4) {
-    padding-bottom: 20px;
-  }
+// ─── Tab sliding track ───────────────────────────────────────────
+.contWrapper {
+  grid-area: content;
+  overflow: hidden;  /* ← ẩn các tab không hiển thị */
 }
 
-// ─── Instructor Details ──────────────────────────────────────────
-.instructorDetails {
-  grid-area: INDET;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  > p:nth-of-type(1) {
-    font-weight: 600;
-    font-size: 20px;
-  }
-
-  > p:nth-of-type(2) {
-    color: blue;
-    font-weight: 600;
-    font-size: 25px;
-    padding-top: 18px;
-  }
-
-  > p:nth-of-type(3) {
-    font-weight: 300;
-    font-size: 16px;
-  }
-
-  > p:nth-of-type(4) {
-    font-weight: 200;
-    margin-top: 10px;
-  }
-}
-
-.instructorProfile {
-  width: 45%;
-  display: grid;
-  grid-template-columns: 120px 35px 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "IICON MEDAL REWS"
-    "IICON GRAD  STUD"
-    "IICON PLAY  COURS";
-  gap: 20px;
-
-  > img:nth-of-type(1) { grid-area: IICON; }
-  > img:nth-of-type(2) { grid-area: MEDAL; }
-  > img:nth-of-type(3) { grid-area: PLAY; }
-  > img:nth-of-type(4) { grid-area: GRAD; }
-  > p:nth-of-type(1)   { grid-area: REWS; }
-  > p:nth-of-type(2)   { grid-area: STUD; }
-  > p:nth-of-type(3)   { grid-area: COURS; }
-
-  > img:nth-of-type(2),
-  > p:nth-of-type(1) {
-    align-self: end;
-  }
-
-  > img:nth-of-type(4),
-  > p:nth-of-type(2) {
-    align-self: center;
-  }
-
-  > img:nth-of-type(3),
-  > p:nth-of-type(3) {
-    align-self: flex-start;
-  }
-
-  > img:nth-of-type(2),
-  > img:nth-of-type(4),
-  > img:nth-of-type(3) {
-    justify-self: end;
-  }
-
-  > img:nth-of-type(2) {
-    padding-right: 4px;
-  }
-}
-
-// ─── Syllabus ────────────────────────────────────────────────────
-.syllabusDetails {
-  margin-top: 2rem;
-}
-
-.syllabusHeader {
-  margin-bottom: 1.25rem;
-}
-
-.syllabusTitle {
-  font-size: 22px;
-  font-weight: 700;
-  color: #1a1a2e;
-  margin: 0 0 4px;
-}
-
-.syllabusSummary {
-  font-size: 14px;
-  color: #6b7280;
-  margin: 0;
-}
-
-/* Table of content container */
-.tableOfContent {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-/* Each accordion card */
-.tocCard {
-  border-bottom: 1px solid #e5e7eb;
-  background: #fff;
-  transition: background 0.2s;
-
-  &:last-child {
-    border-bottom: none;
-  }
-
-  &.tocCardOpen {
-    background: #f9fafb;
-  }
-}
-
-/* Header row — clickable */
-.tocHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 16px 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  gap: 12px;
-
-  &:hover {
-    background: #f3f4f6;
-  }
-}
-
-.tocLeft {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
-  min-width: 0;
-}
-
-.tocIndex {
-  font-size: 13px;
-  font-weight: 600;
-  color: #9ca3af;
-  min-width: 24px;
-  flex-shrink: 0;
-}
-
-.tocTitle {
-  font-size: 15px;
-  font-weight: 600;
-  color: #111827;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.tocRight {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
-.tocMeta {
-  font-size: 13px;
-  color: #6b7280;
-  white-space: nowrap;
-}
-
-.tocDot {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: #d1d5db;
-}
-
-/* Chevron icon */
-.chevron {
-  color: #6b7280;
-  transition: transform 0.25s ease;
-  flex-shrink: 0;
-}
-
-.chevronOpen {
-  transform: rotate(180deg);
-}
-
-/* Expandable body */
-.tocBody {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.tocBodyOpen {
-  max-height: 400px;
-}
-
-/* Lesson list */
-.lessonList {
-  list-style: none;
-  margin: 0;
-  padding: 5px 20px 16px 56px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.lessonItem {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  color: #374151;
-}
-
-.lessonIcon {
-  color: #9ca3af;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-// ─── Reviews Section ─────────────────────────────────────────────
-.reviews {
-  position: relative;
-  padding-left: 77px;
-  padding-right: 77px;
-  display: grid;
-  grid-template-columns: 330px 1fr;
-  grid-template-rows: 25px 1fr  48px;
-  grid-template-areas:
-    "heading heading"
-    "stars   review"
-    "stars   btn";
-  gap: 20px;
-
-  > p       { grid-area: heading; }
-  > .stars  { grid-area: stars; }
-  > .review { grid-area: review; }
-  > button  { grid-area: btn; }
-}
-
-.stars {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-
-  img {
-    width: 18px;
-    height: 17px;
-  }
-}
-
-.starReview {
-  display: flex;
-  gap: 7px;
-  align-items: center;
-
-  > p:nth-of-type(1) {
-    font-weight: 700;
-    font-size: 23px;
-  }
-
-  > img {
-    width: 18px;
-    height: 17px;
-  }
-}
-
-.star5,
-.star4,
-.star3,
-.star2,
-.star1 {
+.tabTrack {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  width: 400%;        /* 4 tabs × 100% */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  overflow-y: auto;     // ← scroll thay vì tràn
-  max-height: 500px;    // ← giới hạn chiều cao nếu muốn scroll
+.tabSlide {
+  width: 25%;         /* mỗi tab chiếm 1/4 của tabTrack = đúng 1 màn */
+  box-sizing: border-box;
 }
 
-// Shared review card style
-.reviewCard {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: 220px 70px 1fr;
-  grid-template-rows: 15px 1fr;
-  grid-template-areas:
-    "ava  star    date"
-    "ava  comment comment";
-  gap: 10px;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 25px 20px 15px 20px;
+.contWrapper {
+  .courseDes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
 
-  > .ava        { grid-area: ava; }
-  > .starRating { grid-area: star; }
+    > p:nth-of-type(1),
+    > p:nth-of-type(3) {
+      font-weight: 600;
+      font-size: 20px;
+    }
 
-  > p:nth-of-type(1) {
-    grid-area: date;
+    > p:nth-of-type(2),
+    > p:nth-of-type(4) {
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    > p:nth-of-type(3) {
+      padding-top: 20px;
+    }
+
+    > p:nth-of-type(4) {
+      padding-bottom: 20px;
+    }
   }
 
-  > p:nth-of-type(2) {
-    grid-area: comment;
-    font-weight: 200;
+  // ─── Instructor Details ──────────────────────────────────────────
+  .instructorDetails {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    > p:nth-of-type(1) {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    > p:nth-of-type(2) {
+      color: blue;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    > p:nth-of-type(3) {
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    > p:nth-of-type(4) {
+      font-weight: 200;
+      margin-top: 10px;
+    }
   }
-}
 
+  .instructorProfile {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 120px 35px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "IICON MEDAL REWS"
+      "IICON GRAD  STUD"
+      "IICON PLAY  COURS";
+    gap: 20px;
 
+    > img:nth-of-type(1) {
+      grid-area: IICON;
+    }
+    > img:nth-of-type(2) {
+      grid-area: MEDAL;
+    }
+    > img:nth-of-type(3) {
+      grid-area: PLAY;
+    }
+    > img:nth-of-type(4) {
+      grid-area: GRAD;
+    }
+    > p:nth-of-type(1) {
+      grid-area: REWS;
+    }
+    > p:nth-of-type(2) {
+      grid-area: STUD;
+    }
+    > p:nth-of-type(3) {
+      grid-area: COURS;
+    }
 
-.ava {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    > img:nth-of-type(2),
+    > p:nth-of-type(1) {
+      align-self: end;
+    }
 
-  > img {
-    width: 60px;
+    > img:nth-of-type(4),
+    > p:nth-of-type(2) {
+      align-self: center;
+    }
+
+    > img:nth-of-type(3),
+    > p:nth-of-type(3) {
+      align-self: flex-start;
+    }
+
+    > img:nth-of-type(2),
+    > img:nth-of-type(4),
+    > img:nth-of-type(3) {
+      justify-self: end;
+    }
+
+    > img:nth-of-type(2) {
+      padding-right: 4px;
+    }
+  }
+
+  // ─── Syllabus ────────────────────────────────────────────────────
+  .syllabusDetails {
+    margin-top: 0;
+  }
+
+  .syllabusHeader {
+    margin-bottom: 1.25rem;
+  }
+
+  .syllabusTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 4px;
+  }
+
+  .syllabusSummary {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  /* Table of content container */
+  .tableOfContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Each accordion card */
+  .tocCard {
+    border-bottom: 1px solid #e5e7eb;
+    background: #fff;
+    transition: background 0.2s;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.tocCardOpen {
+      background: #f9fafb;
+    }
+  }
+
+  /* Header row — clickable */
+  .tocHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    gap: 12px;
+
+    &:hover {
+      background: #f3f4f6;
+    }
+  }
+
+  .tocLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .tocIndex {
+    font-size: 13px;
+    font-weight: 600;
+    color: #9ca3af;
+    min-width: 24px;
+    flex-shrink: 0;
+  }
+
+  .tocTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .tocRight {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .tocMeta {
+    font-size: 13px;
+    color: #6b7280;
+    white-space: nowrap;
+  }
+
+  .tocDot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #d1d5db;
+  }
+
+  /* Chevron icon */
+  .chevron {
+    color: #6b7280;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+  }
+
+  .chevronOpen {
+    transform: rotate(180deg);
+  }
+
+  /* Expandable body */
+  .tocBody {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .tocBodyOpen {
+    max-height: 400px;
+  }
+
+  /* Lesson list */
+  .lessonList {
+    list-style: none;
+    margin: 0;
+    padding: 5px 20px 16px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lessonItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #374151;
+  }
+
+  .lessonIcon {
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  // ─── Reviews Section ─────────────────────────────────────────────
+  .reviews {
+    position: relative;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 25px 1fr 48px;
+    grid-template-areas:
+      "heading heading"
+      "stars   review"
+      "stars   btn";
+    gap: 20px;
+
+    > p {
+      grid-area: heading;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 4px;
+    }
+    > .stars {
+      grid-area: stars;
+    }
+    > .review {
+      grid-area: review;
+    }
+    > button {
+      grid-area: btn;
+    }
+  }
+
+  .stars {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    img {
+      width: 18px;
+      height: 17px;
+    }
+  }
+
+  .starReview {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+
+    > p:nth-of-type(1) {
+      font-weight: 700;
+      font-size: 23px;
+    }
+
+    > img {
+      width: 18px;
+      height: 17px;
+    }
+  }
+
+  .star5,
+  .star4,
+  .star3,
+  .star2,
+  .star1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto; // ← scroll thay vì tràn
+    max-height: 500px; // ← giới hạn chiều cao nếu muốn scroll
+  }
+
+  // Shared review card style
+  .reviewCard {
+    display: grid;
+    width: 100%;
+    
+    grid-template-columns: 220px 60px 1fr;
+    grid-template-rows: 15px 1fr;
+    grid-template-areas:
+      "ava  star    date"
+      "ava  comment comment";
+    gap: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 25px 20px 15px 20px;
+
+    > .ava {
+      grid-area: ava;
+    }
+    > .starRating {
+      grid-area: star;
+    }
+
+    > p:nth-of-type(1) {
+      grid-area: date;
+    }
+
+    > p:nth-of-type(2) {
+      grid-area: comment;
+      font-weight: 200;
+    }
+  }
+
+  .ava {
+    width: 100%;
     height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    > img {
+      width: 60px;
+      height: 60px;
+    }
   }
-}
 
-.starRating {
-  width: 100%;
-  height: 17px;
-  display: flex;
-
-  > img {
-    width: 18px;
+  .starRating {
+    width: 100%;
     height: 17px;
+    display: flex;
+
+    > img {
+      width: 18px;
+      height: 17px;
+    }
   }
 }
 
 // ─── More Courses ────────────────────────────────────────────────
 .courses {
-  padding-left: 77px;
-  padding-right: 77px;
-  margin-top: 77px;
-  padding-bottom: 94px;
+  // padding-left: 77px;
+  // padding-right: 77px;
+  // padding-bottom: 94px;
+  padding:30px 77px 77px 94px;
+  background-color: #f8fafc;
 
   > h2 {
     margin-bottom: 30px;
@@ -705,7 +747,7 @@
 }
 
 .courseList {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
@@ -762,8 +804,4 @@
   font-size: 13px;
   color: #6b7280;
   margin-bottom: 12px;
-}
-
-.navBtn {
-  // styles applied via [class^="navBarButton"] above
 }

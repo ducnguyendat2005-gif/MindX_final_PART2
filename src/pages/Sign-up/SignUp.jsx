@@ -1,110 +1,181 @@
-import React from "react";
-import { useState } from "react";
-import styles from "./SignUp.module.scss";
-import background from "../../assets/af8ea6962e98d38a250ef334d5e66706b6031b27 (1).jpg";
-import google from "../../assets/google.jpg";
-import microsoft from "../../assets/microsoft.png";
-import facebook from "../../assets/facebook.png";
-import Header from "../../components/Header/Header.jsx";
+import { ArrowRight } from 'lucide-react';
+import { motion } from 'motion/react';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './SignUp.scss';
 
-const handleSaveAcc = (FName, LName, userName, email, password, cPass) => {
-  if (password === cPass) {
-    setpError("Password is not the same, please try again");
+export default function SignUpPage() {
+  const [Fname, setFname] = useState('');
+  const [Lname, setLname] = useState('');
+  const [Username, setUsername] = useState('');
+  const [Email, setEmail] = useState('');
+  const [pass, setpass] = useState('');
+  const [Repass, setRepass] = useState('');
+  const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
+
+  
+  const clearError = (field) => {
+    setErrors((prev) => ({ ...prev, [field]: false }));
+  };
+
+  const handleSignUp = async () => {  
+  const newErrors = {};
+  if (!Fname)    newErrors.Fname    = 'Please fill this field';
+  if (!Lname)    newErrors.Lname    = 'Please fill this field';
+  if (!Username) newErrors.Username = 'Please fill this field';
+  if (!Email)    newErrors.Email    = 'Please fill this field';
+  if (!pass)     newErrors.pass     = 'Please fill this field';
+  if (!Repass)   newErrors.Repass   = 'Please fill this field';
+  else if (pass !== Repass) newErrors.Repass = 'Passwords do not match';
+
+  setErrors(newErrors);
+  const res = await fetch(`http://localhost:3001/accounts?Email=${Email}`);
+  const existing = await res.json();
+  if (existing.length > 0) {
+    setErrors({ Email: 'Email already registered' });
+    return;
   }
+  if (Object.keys(newErrors).length === 0) {  
+    await fetch('http://localhost:3001/accounts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ Fname, Lname, Username, Email, pass })
+    });
+  }
+  navigate('/signin')
+  
 };
 
-const SignUp = () => {
-  const [FName, setFName] = useState("");
-  const [LName, setLName] = useState("");
-  const [userName, setuserName] = useState("");
-  const [email, setemail] = useState("");
-  const [password, setPassword] = useState("");
-  const [cPass, setcPass] = useState("");
+  // Style động cho từng input
+  const inputStyle = (field) => ({
+    borderColor: errors[field] ? 'red' : '',
+    outlineColor: errors[field] ? 'red' : '',
+  });
 
   return (
-    <>
-      {/* <Header></Header> */}
-      <div className={styles.mainPage}>
-        <img src={background} alt="Side visual" />
+    <div className="signup-wrapper">
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="signup-image-panel"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1000"
+          alt="Learning"
+          referrerPolicy="no-referrer"
+        />
+        <div className="signup-image-overlay" />
+      </motion.div>
 
-        <div className={styles.signUpSection}>
-          <p>Sign up to your account</p>
-
-          <div className={styles.firstName}>
-            <p>Full name</p>
-            <input
-              type="text"
-              placeholder="First name"
-              onChange={(f) => setFName(f.target.value)}
-            />
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="signup-form-panel"
+      >
+        <div className="signup-form-inner">
+          <div className="signup-heading">
+            <h1>Create Your Account</h1>
           </div>
 
-          <div className={styles.lastName}>
-            <input
-              type="text"
-              placeholder="Last name"
-              onChange={(l) => setLName(l.target.value)}
-            />
-          </div>
+          <form className="signup-form" onSubmit={(e) => { e.preventDefault(); handleSignUp(); }}>
+            <div className="form-row">
+              <div className="form-group">
+                <label>Full Name</label>
+                <input
+                  style={inputStyle('Fname')}
+                  onChange={(e) => { setFname(e.target.value); if (e.target.value) clearError('Fname'); }}
+                  type="text"
+                  placeholder="First Name"
+                />
+                {errors.Fname && <p style={{ color: 'red', fontSize: '12px', margin: 0 }}>{errors.Fname}</p>}
+              </div>
 
-          <div className={styles.username}>
-            <p>Username</p>
-            <input
-              type="text"
-              placeholder="Username"
-              onChange={(u) => setuserName(u.target.value)}
-            />
-          </div>
+              <div className="form-group form-group--no-label">
+                <input
+                  style={inputStyle('Lname')}
+                  onChange={(e) => { setLname(e.target.value); if (e.target.value) clearError('Lname'); }}
+                  type="text"
+                  placeholder="Last Name"
+                />
+                {errors.Lname && <p style={{ color: 'red', fontSize: '12px', margin: 0 }}>{errors.Lname}</p>}
+              </div>
+            </div>
 
-          <div className={styles.email}>
-            <p>Email</p>
-            <input
-              type="text"
-              placeholder="Email ID"
-              onChange={(e) => setemail(e.target.value)}
-            />
-          </div>
+            <div className="form-group">
+              <label>Username</label>
+              <input
+                style={inputStyle('Username')}
+                onChange={(e) => { setUsername(e.target.value); if (e.target.value) clearError('Username'); }}
+                type="text"
+                placeholder="Username"
+              />
+              {errors.Username && <p style={{ color: 'red', fontSize: '12px', margin: 0 }}>{errors.Username}</p>}
+            </div>
 
-          <div className={styles.password}>
-            <p>Password</p>
-            <input
-              type="password"
-              placeholder="Password"
-              onChange={(p) => setPassword(p.target.value)}
-            />
-          </div>
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                style={inputStyle('Email')}
+                onChange={(e) => { setEmail(e.target.value); if (e.target.value) clearError('Email'); }}
+                type="email"
+                placeholder="Email ID"
+              />
+              {errors.Email && <p style={{ color: 'red', fontSize: '12px', margin: 0 }}>{errors.Email}</p>}
+            </div>
 
-          <div className={styles.confirmPassword}>
-            <p>Confirm Password</p>
-            <input
-              type="password"
-              placeholder="Confirm Password"
-              onChange={(c) => setcPass(c.target.value)}
-            />
-            {cPass && <p style={{ color: "red" }}>{cPass}</p>}
-          </div>
+            <div className="form-row">
+              <div className="form-group">
+                <label>Password</label>
+                <input
+                  style={inputStyle('pass')}
+                  onChange={(e) => { setpass(e.target.value); if (e.target.value) clearError('pass'); }}
+                  type="password"
+                  placeholder="Enter Password"
+                />
+                {errors.pass && <p style={{ color: 'red', fontSize: '12px', margin: 0 }}>{errors.pass}</p>}
+              </div>
 
-          <button onClick={handleSaveAcc}>Create Account</button>
+              <div className="form-group">
+                <label>Confirm Password</label>
+                <input
+                  style={inputStyle('Repass')}
+                  onChange={(e) => { setRepass(e.target.value); if (e.target.value) clearError('Repass'); }}
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+                {errors.Repass && <p style={{ color: 'red', fontSize: '12px', margin: 0 }}>{errors.Repass}</p>}
+              </div>
+            </div>
 
-          <div className={styles.sepLine}>
-            <span>Or sign up with</span>
-          </div>
-
-          <div className={styles.signInOther}>
-            <button>
-              <img src={google} alt="Google" />
+            <button type="submit" className="signup-btn">
+              Create Account
+              <ArrowRight className="btn-icon" />
             </button>
-            <button>
-              <img src={facebook} alt="Facebook" />
+          </form>
+
+          <div className="divider">
+            <span>Sign up with</span>
+          </div>
+
+          <div className="social-buttons">
+            <button className="social-btn" type="button">
+              <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook" />
+              <span className="social-btn__label social-btn__label--facebook">Facebook</span>
             </button>
-            <button>
-              <img src={microsoft} alt="Microsoft" />
+            <button className="social-btn" type="button">
+              <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" />
+              <span className="social-btn__label social-btn__label--google">Google</span>
+            </button>
+            <button className="social-btn" type="button">
+              <img src="https://www.svgrepo.com/show/448239/microsoft.svg" alt="Microsoft" />
+              <span className="social-btn__label social-btn__label--microsoft">Microsoft</span>
             </button>
           </div>
         </div>
-      </div>
-    </>
+      </motion.div>
+    </div>
   );
-};
-
-export default SignUp;
+}

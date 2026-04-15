@@ -1,4 +1,4 @@
-import teacher_img from '../assets/Screenshot 2026-03-30 212131.png'
+import teacher_img from '../assets/Screenshot 2026-03-30 205325.png'
 
 const instructors = [
   {

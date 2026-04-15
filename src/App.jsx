@@ -8,6 +8,9 @@ import SignIn from "./pages/Sign-in/SignIn.jsx";
 import SignUp from "./pages/Sign-up/SignUp.jsx";
 import CoursePage from "./pages/CoursePage/CoursePage.jsx";
 import CourseDetail from './pages/CourseDetail/CourseDetail.jsx'
+import CourseLearning from './pages/CourseLearning/CourseLearning.jsx'
+import CartPage from './pages/CartPage/CartPage.jsx'
+import Checkout from './pages/CheckoutPage/Checkout.jsx'
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +19,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<HomePage />} /> 
+        <Route path="/home/cartpage" element={<CartPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/course-page" element={<CoursePage />} />
         <Route path="/signin" element={<SignIn />} />

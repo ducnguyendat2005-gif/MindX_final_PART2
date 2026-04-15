@@ -2,6 +2,7 @@ import styles from "./CourseDetail.module.scss";
 import CourseCard from "../../components/CourseCard/CourseCard";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import CourseImg from "../../assets/CourseDetail/image 4.png";
 import greystar from "../../assets/CourseDetail/Star 3 (1).png";
 import yellowstar from "../../assets/CourseDetail/Star 3.png";
@@ -18,6 +19,10 @@ import github from "../../assets/github.png";
 import google from "../../assets/google.jpg";
 import microsoft from "../../assets/microsoft.png";
 import twitter from "../../assets/twitter.png";
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 const ChevronIcon = ({ open }) => (
   <svg
@@ -77,7 +82,7 @@ const SyllabusItem = ({ item, index, isOpen, onToggle }) => (
 );
 
 const SyllabusSection = ({ course }) => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndexes, setOpenIndexes] = useState(new Set());
 
   const totalLessons = course.details.syllabus.reduce(
     (acc, s) => acc + s.lessons,
@@ -86,7 +91,15 @@ const SyllabusSection = ({ course }) => {
   const totalSections = course.details.syllabus.length;
 
   const handleToggle = (index) => {
-    setOpenIndex((prev) => (prev === index ? null : index));
+    setOpenIndexes((prev) => {
+      const next = new Set(prev);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
   };
   const totalHour = (data) => {
     let sum = 0;
@@ -111,7 +124,7 @@ const SyllabusSection = ({ course }) => {
             key={index}
             item={item}
             index={index}
-            isOpen={openIndex === index}
+            isOpen={openIndexes.has(index)}
             onToggle={handleToggle}
           />
         ))}
@@ -134,6 +147,29 @@ const CourseDetail = () => {
   const [allCourse, setAllCourse] = useState([]);
   const [course, setCourse] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState('description');
+  const [user,setUser] = useState(null);
+  const [added, setAdded] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const stored = localStorage.getItem('loggedInUser');
+    setUser(stored ? JSON.parse(stored) : null);
+  }, []);
+
+  const handleAddtoCart = () => {
+    const existing = JSON.parse(localStorage.getItem('insideCarts') || '[]');
+    const alreadyInCart = existing.some(item => item.id === course.id);
+    if (alreadyInCart) {
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 3000);
+      return;
+    }
+    const updated = [...existing, course];
+    localStorage.setItem('insideCarts', JSON.stringify(updated));
+    setAdded(true);
+  };
 
   useEffect(() => {
     const fetchCourse = async () => {
@@ -150,6 +186,7 @@ const CourseDetail = () => {
 
     fetchCourse();
   }, [id]);
+  
   useEffect(() => {
     fetch('http://localhost:3001/courses')
       .then(res => res.json())
@@ -162,17 +199,42 @@ const CourseDetail = () => {
   
   return (
     <>
+      {showToast && (
+        <div style={{
+          position: 'fixed',
+          top: '24px',
+          right: '24px',
+          zIndex: 9999,
+          backgroundColor: '#1e293b',
+          color: '#fff',
+          padding: '14px 20px',
+          borderRadius: '10px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+          boxShadow: '0 4px 16px rgba(0,0,0,0.25)',
+          animation: 'fadeIn 0.3s ease',
+        }}>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="10" fill="#f59e0b" />
+            <path d="M10 6v4M10 13h.01" stroke="#fff" strokeWidth="1.8"
+              strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          <span>Course already in cart!</span>
+        </div>
+      )}
+
       <div className={styles.background}></div>
       <div className={styles.background2}></div>
 
       <div className={styles.mainPage}>
         <div className={styles.course}>
           <div className={styles.link}>
-            <p>Home</p>
+            <a onClick={() => navigate('/home')}>Home</a>
             <img src={sideArrow} alt="arrow" />
-            <p>Categories</p>
+            <a onClick={() => navigate('/course-page')}>Categories</a>
             <img src={sideArrow} alt="arrow" />
-            <p>{course.title}</p>
+            <a>{course.title}</a>
           </div>
 
           <div className={styles.mainTitle}>
@@ -210,8 +272,24 @@ const CourseDetail = () => {
                 </p>
                 <p style={{ color: "#16A34A" }}>{saleCount(course.details.promotionalPrice,course.details.originalPrice)}% OFF!</p>
               </div>
-              <button className={styles.addToCartButton}>Add To Cart</button>
-              <button className={styles.buyNowButton}>Buy Now</button>
+              <button
+                onClick={() => user ? handleAddtoCart() : navigate('/sign-in')}
+                className={`${styles.addToCartButton} ${added ? styles.addToCartAdded : ''}`}
+              >
+                {added ? (
+                  <>
+                    <span className={styles.checkIcon}>
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <circle cx="9" cy="9" r="9" fill="#16a34a" />
+                        <path d="M5 9.5l3 3 5-5.5" stroke="#fff" strokeWidth="1.8"
+                          strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    Added to Cart
+                  </>
+                ) : 'Add To Cart'}
+              </button>
+              <button onClick={() => user ? handleAddtoCart() : navigate('/signin')} className={styles.buyNowButton}>Buy Now</button>
               <div className={styles.tnbSl}></div>
               <div className={styles.shareInfo}>
                 <p>Share</p>
@@ -237,156 +315,164 @@ const CourseDetail = () => {
           </div>
 
           <div className={styles.courseNavbar}>
-            <div className={styles.navBarButton1}>
-              <label htmlFor="btn1" className={styles.navBtn}>
-                Instructor
-              </label>
-            </div>
-            <div className={styles.navBarButton2}>
-              <label htmlFor="btn2" className={styles.navBtn}>
-                Description
-              </label>
-            </div>
-            <div className={styles.navBarButton3}>
-              <label htmlFor="btn3" className={styles.navBtn}>
-                Reviews
-              </label>
-            </div>
-            <div className={styles.navBarButton4}>
-              <label htmlFor="btn4" className={styles.navBtn}>
-                FAQ
-              </label>
-            </div>
-          </div>
-
-          <div className={styles.sepLine1}></div>
-
-          <div className={styles.courseDes}>
-            <p>Course Description</p>
-            <p>
-              {course.details.courseDescription}
-            </p>
-            <p>Certification</p>
-            <p>
-              {course.details.certification}
-            </p>
-          </div>
-
-          <div className={styles.sepLine2}></div>
-
-          <div className={styles.instructorDetails}>
-            <p>Instructor</p>
-            <p>{course.author}</p>
-            <p>UI/UX Designer</p>
-            <div className={styles.instructorProfile}>
-              <img src={bigava} alt="instructor" />
-              <p>{course.details.instructor.totalReviews} Reviews</p>
-              <img id="medal" src={medal} alt="medal" />
-              <img src={play} alt="play" />
-              <img src={graduation} alt="grad" />
-              <p>{course.details.instructor.totalStudents} Students</p>
-              <p>{course.details.instructor.totalCourses} Courses</p>
-            </div>
-            <p>
-              {course.details.instructor.bio}
-            </p>
-          </div>
-
-          <div className={styles.sepLine3}></div>
-
-          <SyllabusSection course={course}></SyllabusSection>
-        </div>
-
-        {/* Reviews section */}
-        <div className={styles.reviews}>
-          <p>Learner Reviews</p>
-          <div className={styles.stars}>
-            <div className={styles.starReview}>
-              <img src={yellowstar} alt="star" />
-              <p>{course.details.learnerReviews.averageRating}</p>
-              <p>{course.details.learnerReviews.totalReviews.toLocaleString('vi-VN')} reviews</p>
-            </div>
-            <div className={styles.star5}>
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <p>{course.details.learnerReviews.ratingBreakdown["5_star"]}</p>
-            </div>
-            <div className={styles.star4}>
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={greystar} alt="star" />
-              <p>{course.details.learnerReviews.ratingBreakdown["4_star"]}</p>
-            </div>
-            <div className={styles.star3}>
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={greystar} alt="star" />
-              <img src={greystar} alt="star" />
-              <p>{course.details.learnerReviews.ratingBreakdown["3_star"]}</p>
-            </div>
-            <div className={styles.star2}>
-              <img src={yellowstar} alt="star" />
-              <img src={yellowstar} alt="star" />
-              <img src={greystar} alt="star" />
-              <img src={greystar} alt="star" />
-              <img src={greystar} alt="star" />
-              <p>{course.details.learnerReviews.ratingBreakdown["2_star"]}</p>
-            </div>
-            <div className={styles.star1}>
-              <img src={yellowstar} alt="star" />
-              <img src={greystar} alt="star" />
-              <img src={greystar} alt="star" />
-              <img src={greystar} alt="star" />
-              <img src={greystar} alt="star" />
-              <p>{course.details.learnerReviews.ratingBreakdown["1_star"]}</p>
-            </div>
-          </div>
-
-          <div className={styles.review}>
-            {course.details.learnerReviews.reviews.map((i) => (
-              <div key={i} className={styles.reviewCard}>
-                <div className={styles.ava}>
-                  <img src={bigava} alt="avatar" />
-                  <p>{i.name}</p>
-                </div>
-                <div className={styles.starRating}>
-                  <img src={yellowstar} alt="star" />
-                  <p>{i.rating}</p>
-                </div>
-                <p>Reviewed on {i.date}</p>
-                <p>
-                  {i.comment}
-                </p>
-              </div>
+            {['description', 'instructor', 'syllabus', 'reviews'].map((tab) => (
+              <button
+                key={tab}
+                className={`${styles.navBtn} ${activeTab === tab ? styles.navBtnActive : ''}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
             ))}
           </div>
 
-          <button id="more-reviews">View more Reviews</button>
-        </div>
+          <div className={styles.sepLine1}></div>
+          <div className={styles.contWrapper}>
+            <div
+              className={styles.tabTrack}
+              style={{ transform: `translateX(-${['description','instructor','syllabus','reviews'].indexOf(activeTab) * 25}%)` }}
+            >
+
+            {/* Description Tab */}
+            <div className={styles.tabSlide}>
+              <div className={styles.courseDes}>
+                <p>Course Description</p>
+                <p>
+                  {course.details.courseDescription}
+                </p>
+                <p>Certification</p>
+                <p>
+                  {course.details.certification}
+                </p>
+              </div>
+            </div>
+
+            {/* Instructor Tab */}
+            <div className={styles.tabSlide}>
+              <div className={styles.instructorDetails}>
+                <p>Instructor</p>
+                <p>{course.author}</p>
+                <p>UI/UX Designer</p>
+                <div className={styles.instructorProfile}>
+                  <img src={bigava} alt="instructor" />
+                  <p>{course.details.instructor.totalReviews} Reviews</p>
+                  <img id="medal" src={medal} alt="medal" />
+                  <img src={play} alt="play" />
+                  <img src={graduation} alt="grad" />
+                  <p>{course.details.instructor.totalStudents} Students</p>
+                  <p>{course.details.instructor.totalCourses} Courses</p>
+                </div>
+                <p>
+                  {course.details.instructor.bio}
+                </p>
+              </div>
+            </div>
+
+            {/* Syllabus Tab */}
+            <div className={styles.tabSlide}>
+              <SyllabusSection course={course}></SyllabusSection>
+            </div>
+
+            {/* Reviews Tab */}
+            <div className={styles.tabSlide}>
+              <div className={styles.reviews}>
+                <p>Learner Reviews</p>
+                <div className={styles.stars}>
+                  <div className={styles.starReview}>
+                    <img src={yellowstar} alt="star" />
+                    <p>{course.details.learnerReviews.averageRating}</p>
+                    <p>{course.details.learnerReviews.totalReviews.toLocaleString('vi-VN')} reviews</p>
+                  </div>
+                  <div className={styles.star5}>
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <p>{course.details.learnerReviews.ratingBreakdown["5_star"]}</p>
+                  </div>
+                  <div className={styles.star4}>
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <p>{course.details.learnerReviews.ratingBreakdown["4_star"]}</p>
+                  </div>
+                  <div className={styles.star3}>
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <p>{course.details.learnerReviews.ratingBreakdown["3_star"]}</p>
+                  </div>
+                  <div className={styles.star2}>
+                    <img src={yellowstar} alt="star" />
+                    <img src={yellowstar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <p>{course.details.learnerReviews.ratingBreakdown["2_star"]}</p>
+                  </div>
+                  <div className={styles.star1}>
+                    <img src={yellowstar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <img src={greystar} alt="star" />
+                    <p>{course.details.learnerReviews.ratingBreakdown["1_star"]}</p>
+                  </div>
+                </div>
+
+                <div className={styles.review}>
+                  {course.details.learnerReviews.reviews.map((i) => (
+                    <div key={i.name} className={styles.reviewCard}>
+                      <div className={styles.ava}>
+                        <img src={bigava} alt="avatar" />
+                        <p>{i.name}</p>
+                      </div>
+                      <div className={styles.starRating}>
+                        <img src={yellowstar} alt="star" />
+                        <p>{i.rating}</p>
+                      </div>
+                      <p>Reviewed on {i.date}</p>
+                      <p>
+                        {i.comment}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                <button id="more-reviews">View more Reviews</button>
+              </div>
+            </div>
+
+          </div>{/* end tabTrack */}
+          </div>{/* end contWrapper */}
+      </div>
+
+        
 
         <div className={styles.courses}>
           <h2 className={styles.divTitle}>More Courses Like This</h2>
           <div className={styles.courseList}>
-            {sameCourse({ data: allCourse, course: course }).map((data) => 
+            {sameCourse({ data: allCourse, course: course }).map((data) =>
+            <div key={data.id} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> 
             <CourseCard
-            key={data.id}
-            id={data.id}
-            title={data.title}
-            instructor={data.author}
-            rating={data.rating}
-            ratingCount={data.reviews}
-            duration={`${data.hours} Total Hours. ${data.lectures} Lectures. ${data.level}`}
-            category={data.category}
-            price={`$${data.price}`}
-            >
+              key={data.id}
+              id={data.id}
+              title={data.title}
+              instructor={data.author}
+              rating={data.rating}
+              ratingCount={data.reviews}
+              duration={`${data.hours} Total Hours. ${data.lectures} Lectures. ${data.level}`}
+              category={data.category}
+              price={`$${data.price}`}
+              >
 
-            </CourseCard>)}
+            </CourseCard>
+            </div>)}
           </div>
         </div>
       </div>
