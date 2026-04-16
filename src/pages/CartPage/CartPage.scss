@@ -214,6 +214,7 @@
   font-weight: 700;
   color: #111827;
   margin: 0 0 1.5rem;
+  
 }
 
 .cart-summary__rows {
@@ -255,5 +256,5 @@
   transition: background-color 0.15s ease;
   box-sizing: border-box;
 
-  &:hover { background-color: #1e293b; }
+  &:hover { background-color: white;color:#0f172a;cursor:pointer; }
 }

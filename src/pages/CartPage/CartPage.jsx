@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Star } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import img from '../../assets/photo-1542744094-3a31f272c490.avif'
 import './CartPage.scss';
 
 
@@ -52,6 +54,7 @@ export default function CartPage() {
   const discount = 10.00;
   const tax = 20.00;
   const total = subtotal - discount + tax;
+  const navigate = useNavigate();
   
   const handleRemove = (id) => {
     const updated = cart.filter(item => item.id !== id);
@@ -60,6 +63,9 @@ export default function CartPage() {
   };
   
   console.log(cart)
+  
+  
+  
 
   return (
     <div className="cart-page">
@@ -81,14 +87,14 @@ export default function CartPage() {
             {cart.map((item) => (
               <div key={item.id} className="cart-item">
                 <div className="cart-item__image">
-                  <img src={item.image} alt={item.title} referrerPolicy="no-referrer" />
+                  <img src={img} alt={item.title} referrerPolicy="no-referrer" />
                 </div>
                 <div className="cart-item__info">
                   <div className="cart-item__top">
                     <h3 className="cart-item__title">{item.title}</h3>
                     <span className="cart-item__price">${item.price.toFixed(2)}</span>
                   </div>
-                  <p className="cart-item__instructor">By {item.instructor}</p>
+                  <p className="cart-item__instructor">By {item.author}</p>
                   <div className="cart-item__rating">
                     <span className="cart-item__rating-score">{item.rating}</span>
                     <div className="cart-item__stars">
@@ -96,12 +102,12 @@ export default function CartPage() {
                         <Star key={i} className={`star-icon ${i < 4 ? 'star-icon--filled' : 'star-icon--empty'}`} />
                       ))}
                     </div>
-                    <span className="cart-item__reviews">({item.reviewsCount} rating)</span>
+                    <span className="cart-item__reviews">({item.reviews} rating)</span>
                   </div>
                   <div className="cart-item__meta">
-                    <span>{item.duration}</span>
+                    <span>{item.hours} hours</span>
                     <span>•</span>
-                    <span>{item.lecturesCount} Lectures</span>
+                    <span>{item.lectures} Lectures</span>
                     <span>•</span>
                     <span>{item.level}</span>
                   </div>
@@ -136,9 +142,9 @@ export default function CartPage() {
                   <span>${total.toFixed(2)}</span>
                 </div>
               </div>
-              <Link to="/checkout" className="cart-summary__btn">
+              <button onClick={() => navigate('/home/cartpage/checkout')} to="/checkout" className="cart-summary__btn">
                 Proceed to Checkout
-              </Link>
+              </button>
             </div>
           </div>
         </div>

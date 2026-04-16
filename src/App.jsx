@@ -11,6 +11,7 @@ import CourseDetail from './pages/CourseDetail/CourseDetail.jsx'
 import CourseLearning from './pages/CourseLearning/CourseLearning.jsx'
 import CartPage from './pages/CartPage/CartPage.jsx'
 import Checkout from './pages/CheckoutPage/Checkout.jsx'
+import BuyNPage from './pages/BuyNowPage/BuyNPage.jsx'
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -24,7 +25,9 @@ function App() {
         <Route path="/course-page" element={<CoursePage />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path='/course-page/:id' element={<CourseDetail />}/> 
+        <Route path='/home/course-page/:id' element={<CourseDetail />}/> 
+        <Route path="/home/cartpage/checkout" element={<Checkout/>}/>
+        <Route path='/home/course-page/:id/buynow'element={<BuyNPage/>}></Route>
       </Routes>
       <Footer></Footer>
     </>

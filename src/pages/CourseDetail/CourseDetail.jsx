@@ -171,6 +171,16 @@ const CourseDetail = () => {
     setAdded(true);
   };
 
+  const handleBuynow = () => {
+    if (!user) {
+      navigate('/sign-in');
+      return;
+    }
+    navigate(`/home/course-page/${id}/buynow`, {
+      state: { course: [course] }  // cart: [course]truyền thẳng 1 course
+    });
+  };
+
   useEffect(() => {
     const fetchCourse = async () => {
       try {
@@ -289,7 +299,7 @@ const CourseDetail = () => {
                   </>
                 ) : 'Add To Cart'}
               </button>
-              <button onClick={() => user ? handleAddtoCart() : navigate('/signin')} className={styles.buyNowButton}>Buy Now</button>
+              <button onClick={() => handleBuynow()} className={styles.buyNowButton}>Buy Now</button>
               <div className={styles.tnbSl}></div>
               <div className={styles.shareInfo}>
                 <p>Share</p>
@@ -458,7 +468,7 @@ const CourseDetail = () => {
           <h2 className={styles.divTitle}>More Courses Like This</h2>
           <div className={styles.courseList}>
             {sameCourse({ data: allCourse, course: course }).map((data) =>
-            <div key={data.id} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> 
+            <div key={data.id} onClick={() => window.location.reload()}> 
             <CourseCard
               key={data.id}
               id={data.id}

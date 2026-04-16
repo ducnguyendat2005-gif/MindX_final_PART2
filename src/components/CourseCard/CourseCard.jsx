@@ -30,8 +30,8 @@ const StarRating = ({ rating, maxStars = 5 }) => {
 // CourseCard.jsx
 const CourseCard = ({ thumbnail = image, title, instructor, rating, ratingCount, duration, category, price, id }) => {
   return (
-    <Link to={`/course-page/${id}`} style={{ textDecoration: "none", color: "inherit" }}>
-      <div className={styles.CourCard}>
+    <Link to={`/home/course-page/${id}`} style={{ textDecoration: "none", color: "inherit" }}>
+      <div className={styles.CourCard}> 
         <img src={thumbnail} alt="course thumbnail" />
         <p className={styles.title}>{title}</p>
         <p className={styles.instructor}>By {instructor}</p>

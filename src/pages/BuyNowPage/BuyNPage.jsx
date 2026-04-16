@@ -1,17 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Tag } from 'lucide-react';
-import './Checkout.scss';
+import { useLocation } from 'react-router-dom';
+
+import './BuyNPage.scss';
 
 export default function CheckoutPage() {
-  const [paymentMethod, setPaymentMethod] = useState('card');
-  const cart = JSON.parse(localStorage.getItem('insideCarts') || '[]')
-  const subtotal = cart.reduce((acc, item) => acc + item.price, 0);
-  const discount = 10.00;
-  const tax = 20.00;
-  const total = subtotal - discount + tax;
+    const [paymentMethod, setPaymentMethod] = useState('card');
+    const location = useLocation();
+console.log(location.state); // xem có data không
+const course = location.state?.course ?? [];
+    const subtotal = course.reduce((acc, item) => acc + item.price, 0);
+    const discount = 10.00;
+    const tax = 20.00;
+    const total = subtotal - discount + tax;
 
-  
   
   return (
     <div className="checkout-page">
@@ -122,7 +125,7 @@ export default function CheckoutPage() {
             <div className="checkout-summary__box">
               <h2 className="checkout-summary__title">Order Details</h2>
 
-              {cart.map((data)=>(
+              {course.map((data)=>(
               <div className="checkout-summary__course">
                 <img
                   src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=400"
